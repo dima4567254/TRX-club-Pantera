@@ -1,13 +1,15 @@
 /*$Butler: 'Butler',
 sans-serif;*/
 
-$active: #fb0909;
-$focus:#14B4BE;
-$hover:#000010;
+$active: transparent;
+$focus:transparent;
+$hover:#fee301;
+$yellow:#fee301;
 
 
-$ac: #fcd7b6;
-// $default:$black;
+$ac: #fee301;
+$de:#000000;
+
 $white: #FFFFFF;
 $black: #000000;
 $title: #436372;
@@ -29,7 +31,7 @@ $btn-menu:silver;
 
 
 //section
-$padding-main:100px;
+$padding-main:70px;
 $padding-1200:60px;
 $padding-992:50px; //70
 $padding-768:40px; //50
@@ -81,7 +83,7 @@ $padding-576:30px;
 //     -webkit-line-clamp: $line-clamp;
 //     -webkit-box-orient: vertical;
 //     overflow: hidden;
-    
+
 // }
 
 // @mixin line-height($font-size, $line-height, ) {
