@@ -293,7 +293,7 @@
     &__item {
         font-size: 20px;
         color: $de;
-        max-width: 330px;
+        width: 370px;
         display: flex;
         padding-right: 20px;
         padding-left: 20px;
@@ -409,7 +409,6 @@
 
     &__text p {
         max-width: 245px;
-        // padding: 0 20px;
         font-size: 18px;
     }
 
@@ -421,107 +420,19 @@
     }
 }
 
-
-
 .for-whom {
     &__title {
         color: $de;
     }
-
-    &__accordion {}
 }
-
-
-
-// .accordion__box {
-//     display: flex;
-//     justify-content: space-between;
-//     width: 100%;
-//     margin-bottom: 5px;
-//     cursor: pointer;
-// }
-
-// .accordion__wrapper {
-//     position: relative;
-
-//     &::before,
-//     &::after {
-//         content: "";
-//         position: absolute;
-//         top: 30px;
-//         right: 35px;
-//         height: 36px;
-//         width: 2px;
-//         // background: linear-gradient(135.62deg, #0AA6FE 24.73%, #05FFFF 128.33%);
-//         background-color: $ac;
-//         transition: transform 1s;
-//     }
-
-//     &::before {
-//         transform: rotate(270deg);
-//     }
-
-//     &::after {
-//         transform: rotate(180deg);
-//     }
-
-// }
-
-// .accordion__wrapper.active:before {
-//     transform: rotate(500deg);
-
-//     // 500 крест
-//     // 675
-//     // 450
-//     // 225
-// }
-
-// .accordion__wrapper.active::after {
-//     transform: rotate(400deg);
-//     // 400 крест
-//     // 490
-//     // 360
-
-
-//     // 230
-// }
 
 .accordion {
     color: $de;
 
     &__item {
-        // position: relative;
-
-        // &::before,
-        // &::after {
-        //     content: "";
-        //     position: absolute;
-        //     top: 30px;
-        //     right: 35px;
-        //     height: 36px;
-        //     width: 2px;
-        //     // background: linear-gradient(135.62deg, #0AA6FE 24.73%, #05FFFF 128.33%);
-        //     background-color: $ac;
-        //     transition: transform 1s;
-        // }
-
-        // &::before {
-        //     transform: rotate(270deg);
-        // }
-
-        // &::after {
-        //     transform: rotate(180deg);
-        // }
-    }
-
-    &__wrapper {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        margin-bottom: 5px;
-        cursor: pointer;
-
         position: relative;
+        perspective: 0px;
+        overflow: hidden;
 
         &::before,
         &::after {
@@ -531,7 +442,6 @@
             right: 35px;
             height: 36px;
             width: 2px;
-            // background: linear-gradient(135.62deg, #0AA6FE 24.73%, #05FFFF 128.33%);
             background-color: $ac;
             transition: transform 1s;
         }
@@ -543,30 +453,23 @@
         &::after {
             transform: rotate(180deg);
         }
-
     }
 
-    .accordion__wrapper.active:before {
+    .accordion__item.active:before {
         transform: rotate(500deg);
-
-        // 500 крест
-        // 675
-        // 450
-        // 225
     }
 
-    .accordion__wrapper.active::after {
+    .accordion__item.active::after {
         transform: rotate(400deg);
-        // 400 крест
-        // 490
-        // 360
-
-
-        // 230
     }
 
-    // perspective: 500px;
-
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 5px;
+        cursor: pointer;
+    }
 
     &__box {
         padding: 20px 40px;
@@ -574,87 +477,36 @@
         display: inline-block;
     }
 
-    &__svg {}
-
-    &__inner {
+    &__info {
         display: flex;
         justify-content: space-between;
-        // color: $de;
         width: 100%;
         color: $white;
         padding: 32px 40px;
         font-size: 22px;
         font-weight: 500;
         text-transform: uppercase;
-        // display: block;
-        // width: 100%;
         background-color: #313131;
     }
 
-    &__info {}
-
-    &__btn {
-        border: none;
-        background-color: transparent;
-        z-index: 999;
-        //!!!! сделать как бефор такой автор
-
-    }
-
     &__text {
-        // display: none;
-        // padding: 30px;
         background-color: #f5f5f5;
         color: #313131;
         font-size: 18px;
-        // overflow: hidden;
-
-        // padding: 0 30px;
-        // margin: 30px 0;
-        // background-color: transparent;
-        max-height: 0;
-        overflow: hidden;
-        // transition: max-height 0.2s ease-out;
-        // width: 96%;
-        // font-family: "Raleway";
-        // font-size: 15px;
-        // line-height: 1.6em;
-        // letter-spacing: .4px;
-        // font-weight: 400;
-        // font-style: normal;
-        // color: rgba(0, 0, 0, .88);
+        transform: rotateX(180deg);
+        opacity: 0;
         transition-property: transform,
             opacity;
-        transition-duration: .4s;
-        transform: rotateX(360deg);
-        // // opacity: 0;
+        transition-duration: 1.4s;
+        position: absolute;
+        top: -1000vh;
 
-        // transform: rotateX(0);
-        // opacity: 1;
-        // ----------
-        // transform: rotateX(180deg);
-        // opacity: 0;
-        // transition-property: transform,
-        //     opacity 5.4s;
-        // transition-duration: 5.4s;
-        // position: absolute;
-        // top: -1000vh;
-
-        // color: $de;
         &--active {
-            // display: block;
-            // transform: rotateX(180deg);
-            // opacity: 0;
-            // -------------------
-            // perspective: 0px;
-            // transform: rotateX(0);
-            // opacity: 1;
-            // // display: block;
-            // position: relative;
-            // top: 0;
-            // transition-property: transform,
-            //     opacity;
-            // transition-duration: .4s;
+            transform: rotateX(0);
+            opacity: 1;
+            display: block;
+            position: relative;
+            top: 0;
         }
     }
 
@@ -663,140 +515,109 @@
     }
 }
 
-// body {
-//     background-color: grey;
-// }
-// ------------------------------------------
-// .course-panel {
-//     color: green;
-// }
 
-
-// button.course-accordion {
-//     background-color: transparent;
-//     color: navajowhite;
-//     cursor: pointer;
-//     padding: 8px;
-//     width: 100%;
-//     border: none;
-//     text-align: left;
-//     outline: none;
-//     font-size: 22px;
-//     font-weight: 600;
-//     transition: 0.4s;
-//     font-family: "Raleway";
-//     line-height: 1.5em;
-//     text-transform: none;
-//     letter-spacing: 0px;
-//     font-weight: 600;
-//     font-style: normal;
-// }
-
-// /*When the button is active or mouse hovers*/
-// button.course-accordion.active,
-// button.course-accordion:hover {
-//     background-color: rgba(166, 166, 166, 0.6);
-// }
-
-// /*button not active*/
-// // плюсик
-// button.course-accordion:after {
-//     content: '\002B';
-//     color: black;
-//     font-weight: bold;
-//     float: right;
-//     margin-left: 5px;
-// }
-
-// /* minus button */
-// button.course-accordion.active:after {
-//     content: "\2212";
-
-
-// }
-
-// div.course-panel {
-//     padding: 0 18px;
-//     background-color: transparent;
-//     max-height: 0;
-//     overflow: hidden;
-//     transition: max-height 0.2s ease-out;
-//     width: 96%;
-//     font-family: "Raleway";
-//     font-size: 15px;
-//     line-height: 1.6em;
-//     letter-spacing: .4px;
-//     font-weight: 400;
-//     font-style: normal;
-//     color: rgba(0, 0, 0, .88);
-// }
-
-// .course-accordion {
-//     display: flex;
-//     justify-content: space-between;
-//     width: 100%;
-//     margin-bottom: 5px;
-//     cursor: pointer;
-// }
-
-
-// .hide {
-//     display: none;
-// }
-
-// .active {
-//     background-color: green;
-// }
-
-// .accordion__text--active {
-//     display: block;
-// }
-
-
-
-
-
-
-//!!!!! добавить в глобальные снипеты
-#map {
-    height: 335px;
-    width: 500px;
-
-    @media (max-width: 1200px) {
-        width: 100%;
-        height: 50vh;
-    }
+.gallery {
+    &__title {}
 }
 
 
-/*медия всегда должны быть в низу */
 
 
-/*
+.swiper {}
 
-&__link {
-    color: $title;
-    font-family: $;
-    font-size: 15px;
-    line-height: 1;
-    font-weight: 700;
-    outline-color: #000000;
-    outline-offset: 5px;
-    transition: color 0.5s;
-    &:focus {
-        color: $green;
-    }
+.swiper-button-next {}
 
-    &:hover {
-        color: $ac;
-    }
+.swiper-button-prev {}
 
-    &--active {
-        color: $ac;
-    }
+.swiper-wrapper {}
+
+.swiper-slide {}
+
+.advantages__picture {}
+
+.advantages__img {}
+
+.swiper-swiper {}
+
+.gallery-slider-big__item {}
+
+.gallery-slider-big__picture {}
+
+.product-detalis-slider-big__item {
+    width: 100%;
+    height: 530px;
 }
 
-*/
+.product-detalis-slider-big__images {
+    width: 100%;
+    height: 530px;
+}
+
+.gallery-slider-big__img {
+    // width: 230px;
+    // width: 100%;
+    // height: 530px;
+    height: 135px;
+}
+
+.product-detalis-slider__img {
+    width: 230px;
+    height: 135px;
+    // background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0.3;
+}
+
+.product-detalis-slider__item {
+    // width: 230px !important;
+    // height: 200px;
+    // background-color: rgba(0, 0, 0, 0.5);
+    // background-color: $de;
+     background-color: #202020;
+    cursor: pointer;
+}
+
+.product-detalis-slider {
+    height: 500px;
+}
+
+.product-detalis-slider__item {
+    border: 2px solid #000;
+    // opacity: 0.3;
+    // background-color: rgba(0, 0, 0, 0.5);
+    // background-color: #000;
+
+
+}
+
+.slick-initialized .slick-slide {
+    // background-color: rgba(0, 0, 0, 0.5);
+    // opacity: 0.3;
+}
+
+// product-detalis-slider__item slick-slide slick-current slick-active
+.slick-center {
+    border: 2px solid $ac;
+    opacity: 1;
+    // border: 2px solid #fee301;
+
+}
+
+// .center h3 {
+//     opacity: 0.8;
+//     transition: all 300ms ease;
+// }
+
+// .slick-cloned {
+//     opacity: 0.8;
+// }
+
+.product-detalis-slider__item slick-slide slick-active {
+    opacity: 0.8;
+}
+
+.slick-active {
+    // opacity: 0.50;
+}
 
 /*.video {
     height: 425px;

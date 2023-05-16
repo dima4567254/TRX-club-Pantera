@@ -1,5 +1,5 @@
  // @import '../../node_modules/slick-carousel/slick/slick.scss';
-// @import '../../node_modules/swiper/swiper-bundle.min';
+@import '../../node_modules/swiper/swiper-bundle.min';
 // @import '../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox';
 // @import '../../node_modules/ion-rangeslider/css/ion.rangeSlider';
 // @import '../../node_modules/rateyo/src/jquery.rateyo';
@@ -9,7 +9,7 @@
 
 
 
-// npm install swiper
+// npm install swiper --save-dev
 // npm install mixitup --save-dev
 // npm install @fancyapps/fancybox --save-dev
 // npm i jquery-form-styler --save-dev
