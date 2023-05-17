@@ -1,6 +1,4 @@
 
-
-
 $(function name() {
     $('.accordion__wrapper').on('click', function () {
         $(this).next().toggleClass('accordion__text--active');
@@ -17,10 +15,27 @@ $(function name() {
         });
     });
 
-    $('.product-detalis-slider').slick({
+    // $(document).ready(function () {
+    //     $(".rates__list").click(function () {
+    //         $(this)('.rates__items').add('active');
+    //     });
+    // });
+
+    $('.rates__list').on('click', function () {
+        // $(this).next().toggleClass('active');
+        // $(this).toggleClass('questions__text--active');
+        $(this)('.rates__items').add('active');
+        // $(this)('.accordion__btn').removeClass('active');
+        // $(this)('.accordion__btn').add('active');
+        // $('.accordion__btn').toggleClass('active');
+    });
+
+    
+
+    $('.gallery-slider__items').slick({
         dots: false,
         arrows: false,
-        asNavFor: '.product-detalis-slider-big',
+        asNavFor: '.gallery-slider-big',
         // focusOnSelect: true,
         // // slidesToShow: 5, //кол-во слайдов
         // slidesToScroll: 1,//кол-во переключния слайдовза 1 раз
@@ -29,15 +44,15 @@ $(function name() {
         // // centerMode: true,
         // // centerPadding: '60px',
         // centerMode: true,
-        // centerPadding: '1px',
+        centerPadding: '0px',// убирает кусочки слайдов по бокам
         // slidesToShow: 5,
-        // autoplaySpeed: 2000,
-        // autoplay: true,
+        autoplaySpeed: 2000,
+        autoplay: true,
 
         loop:true,//бесконечность
         // // vertical: true,
         // // draggable: false
-
+        // variableWidth: true,
         slidesToShow: 5,
         slidesToScroll: 1,
         centerMode: true,
@@ -45,7 +60,7 @@ $(function name() {
         draggable: false,
     });
 
-    $('.product-detalis-slider-big').slick({
+    $('.gallery-slider-big').slick({
         // dots: false,
         // arrows: false,
         // centeredSlides: true,
@@ -53,11 +68,12 @@ $(function name() {
         // autoplay: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: false,
+        arrows: true,
         fade: true,
+        // variableWidth: true,
 
-        asNavFor: '.product-detalis-slider',
-        draggable: false,
+        asNavFor: '.gallery-slider__items',
+        // draggable: false,
         // vertical: false,
         // responsive: [
 
@@ -70,6 +86,7 @@ $(function name() {
         //     },
         // ]
     });
+    
     // $('.single-item').slick();
     // $('.home__slider').slick({
     //     navigation: {
@@ -102,3 +119,6 @@ $(function name() {
     // });
 });
 
+// Fancybox.bind("[data-fancybox]", {
+//     // Your custom options
+// });

@@ -9,8 +9,7 @@
     <!-- <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link rel="shortcut icon" href="https://yoursite.ru/favicon.png" type="image/x-icon"> -->
     <title>Фітнес зал TRX-club Pantera</title>
-    <link rel="stylesheet" type="text/css" href="css/slick.css" />
-    <!-- <link rel="stylesheet" type="text/css" href="css/slick.css"> -->
+
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -21,6 +20,8 @@
 <!-- 271 подумать делать ли список -->
 <!-- 138   возможно и х2 дложно быть -->
 <!-- accordion li b ul пустые но похоже на список -->
+<!-- возможно нужно переназвать секции где родитель только с двумя элементами -->
+<!-- в галерее черная рамка -->
 
 <body>
     <header class="header">
@@ -474,168 +475,199 @@
                 <h2 class="gallery__title title title--bem">
                     галерея
                 </h2>
-            </div>
-            <section class="product-detalis">
-                <div class="container container--sm">
-                    <div class="product-detalis__inner">
-                        <ul class="product-detalis-slider-big">
-                            <li class="product-detalis-slider-big__item">
-                                <img class="product-detalis-slider-big__images"
-                                    src="images/slider-product-detalis/1.jpg" alt="lampa">
+                <div class="gallery-slider">
+                    <div class="gallery-slider__inner">
+                        <ul class="gallery-slider-big">
+                            <li class="gallery-slider-big__item">
+                                <a class="gallery-slider-big__link" href="#" data-fancybox="gallery">
+                                    <img class="gallery-slider-big__images" src="images/slider-product-detalis/1.jpg"
+                                        alt="lampa">
+                                </a>
                             </li>
-                            <li class="product-detalis-slider-big__item">
-                                <img class="product-detalis-slider-big__images"
-                                    src="images/slider-product-detalis/2.jpg" alt="lamp detail">
+                            <li class="gallery-slider-big__item">
+                                <a class="gallery-slider-big__link" href="images/slider-product-detalis/2.jpg"
+                                    data-fancybox="gallery">
+                                    <img class="gallery-slider-big__images" src="images/slider-product-detalis/2.jpg"
+                                        alt="lamp detail">
+                                </a>
                             </li>
-                            <li class="product-detalis-slider-big__item">
-                                <img class="product-detalis-slider-big__images"
-                                    src="images/slider-product-detalis/3.jpg" alt="lamp detail">
+                            <li class="gallery-slider-big__item">
+                                <a class="gallery-slider-big__link" href="images/slider-product-detalis/3.jpg"
+                                    data-fancybox="gallery">
+                                    <img class="gallery-slider-big__images" src="images/slider-product-detalis/3.jpg"
+                                        alt="lamp detail">
+                                </a>
                             </li>
-                            <li class="product-detalis-slider-big__item">
-                                <img class="product-detalis-slider-big__images"
-                                    src="images/slider-product-detalis/4.jpg" alt="lamp detail">
+                            <li class="gallery-slider-big__item">
+                                <a class="gallery-slider-big__link" href="images/slider-product-detalis/4.jpg"
+                                    data-fancybox="gallery">
+                                    <img class="gallery-slider-big__images" src="images/slider-product-detalis/4.jpg"
+                                        alt="lamp detail">
+                                </a>
                             </li>
-                            <li class="product-detalis-slider-big__item">
-                                <img class="product-detalis-slider-big__images"
-                                    src="images/slider-product-detalis/5.jpg" alt="lamp detail">
+                            <li class="gallery-slider-big__item">
+                                <a class="gallery-slider-big__link" href="images/slider-product-detalis/5.jpg"
+                                    data-fancybox="gallery">
+                                    <img class="gallery-slider-big__images" src="images/slider-product-detalis/5.jpg"
+                                        alt="lamp detail">
+                                </a>
                             </li>
-                            <li class="product-detalis-slider-big__item">
-                                <img class="product-detalis-slider-big__images"
-                                    src="images/slider-product-detalis/5.jpg" alt="lamp detail">
-                            </li>
-                        </ul>
-                        <ul class="product-detalis-slider">
-                            <li class="product-detalis-slider__item">
-                                <img class="product-detalis-slider__img" src="images/slider-product-detalis/1.jpg"
-                                    alt="lampa">
-                            </li>
-                            <li class="product-detalis-slider__item">
-                                <img class="product-detalis-slider__img" src="images/slider-product-detalis/2.jpg"
-                                    alt="lamp detail">
-                            </li>
-                            <li class="product-detalis-slider__item">
-                                <img class="product-detalis-slider__img" src="images/slider-product-detalis/3.jpg"
-                                    alt="lamp detail">
-                            </li>
-                            <li class="product-detalis-slider__item">
-                                <img class="product-detalis-slider__img" src="images/slider-product-detalis/4.jpg"
-                                    alt="lamp detail">
-                            </li>
-                            <li class="product-detalis-slider__item">
-                                <img class="product-detalis-slider__img" src="images/slider-product-detalis/5.jpg"
-                                    alt="lamp detail">
-                            </li>
-                            <li class="product-detalis-slider__item">
-                                <img class="product-detalis-slider__img" src="images/slider-product-detalis/5.jpg"
-                                    alt="lamp detail">
+                            <li class="gallery-slider-big__item">
+                                <a class="gallery-slider-big__link" href="images/slider-product-detalis/5.jpg"
+                                    data-fancybox="gallery">
+                                    <img class="gallery-slider-big__images" src="images/slider-product-detalis/5.jpg"
+                                        alt="lamp detail">
+                                </a>
                             </li>
                         </ul>
-
+                        <ul class="gallery-slider__items">
+                            <li class="gallery-slider__item">
+                                <img class="gallery-slider__img" src="images/slider-product-detalis/1.jpg" alt="lampa">
+                            </li>
+                            <li class="gallery-slider__item">
+                                <img class="gallery-slider__img" src="images/slider-product-detalis/2.jpg"
+                                    alt="lamp detail">
+                            </li>
+                            <li class="gallery-slider__item">
+                                <img class="gallery-slider__img" src="images/slider-product-detalis/3.jpg"
+                                    alt="lamp detail">
+                            </li>
+                            <li class="gallery-slider__item">
+                                <img class="gallery-slider__img" src="images/slider-product-detalis/4.jpg"
+                                    alt="lamp detail">
+                            </li>
+                            <li class="gallery-slider__item">
+                                <img class="gallery-slider__img" src="images/slider-product-detalis/5.jpg"
+                                    alt="lamp detail">
+                            </li>
+                            <li class="gallery-slider__item">
+                                <img class="gallery-slider__img" src="images/slider-product-detalis/5.jpg"
+                                    alt="lamp detail">
+                            </li>
+                        </ul>
                     </div>
-            </section>
-
-            <section class="rates">
-                <div class="container">
-                    <h2 class="rates__title">
-                        ціни
-                    </h2>
                 </div>
+            </div>
+        </section>
 
+        <section class="rates section section--bem">
+            <div class="container">
+                <h2 class="rates__title title title--bem">
+                    ціни
+                </h2>
                 <ul class="rates__wrapper">
                     <li class="rates__list">
-                        на групові заняття
-                        <svg class="rates__svg" width="30px" height="48px">
-                            <use xlink:href="images/sprite.svg#facebook">
-                            </use>
-                        </svg>
+                        <div class="rates__inner">
+                            <div class="rates__subtitle">
+                                на групові заняття
+                            </div>
+                            <svg class="rates__svg" width="24px" height="24px" fill="#fee301">
+                                <use xlink:href="images/sprite.svg#arrow_left">
+                                </use>
+                            </svg>
+                        </div>
                         <ul class="rates__items">
                             <li class="rates__item">
-                                <p>
+                                <p class="rates__info">
                                     1 тренування
                                 </p>
-                                <div>100</div>
+                                <span class="rates__price">100</span>
                                 <span>грн</span>
-                                термін дії: 1 день
+                                <p>
+                                    термін дії: 1 день
+                                </p>
                             </li>
                             <li class="rates__item">
-                                <p>
+                                <p class="rates__info">
                                     5 тренувань
                                 </p>
-                                <div>
-                                    450
-                                </div>
+                                <span class="rates__price">450</span>
                                 <span>грн</span>
-                                термін дії: 30 день
+                                <p>
+                                    термін дії: 30 день
+                                </p>
                             </li>
                             <li class="rates__item">
-                                <p>
+                                <p class="rates__info">
                                     10 тренувань
                                 </p>
-                                <div>
+                                <span class="rates__price">
                                     900
-                                </div>
+                                </span>
                                 <span>грн</span>
-                                термін дії: 45 день
+                                <p>термін дії: 45 день</p>
                             </li>
                             <li class="rates__item">
-                                <p>
+                                <p class="rates__info">
                                     20 тренувань
                                 </p>
-                                <div>
+                                <span class="rates__price">
                                     1700
-                                </div>
+                                </span>
                                 <span>грн</span>
-                                термін дії: 60 день
+                                <p>
+                                    термін дії: 60 день
+                                </p>
                             </li>
                             <li class="rates__item">
-                                <p>
+                                <p class="rates__info">
                                     дитячий 1 тренування
                                 </p>
-                                <div>
+                                <span class="rates__price">
                                     80
-                                </div>
+                                </span>
                                 <span>грн</span>
-                                термін дії: 55 день
+                                <p>
+                                    термін дії: 55 день
+                                </p>
                             </li>
                             <li class="rates__item">
-                                <p>
+                                <p class="rates__info">
                                     дитячий 5 тренування
                                 </p>
-                                <div>
+                                <span class="rates__price">
                                     350
-                                </div>
+                                </span>
                                 <span>грн</span>
-                                термін дії: 55 день
+                                <p>
+                                    термін дії: 55 день
+                                </p>
                             </li>
                             <li class="rates__item">
-                                <p>
+                                <p class="rates__info">
                                     дитячий 10 тренування
                                 </p>
-                                <div>
+                                <span class="rates__price">
                                     700
-                                </div>
+                                </span>
                                 <span>грн</span>
-                                термін дії: 55 день
+                                <p>
+                                    термін дії: 55 день
+                                </p>
                             </li>
                             <li class="rates__item">
-                                <p>
+                                <p class="rates__info">
                                     студентський
                                 </p>
-                                <div>
+                                <span class="rates__price">
                                     730
-                                </div>
+                                </span>
                                 <span>грн</span>
-                                термін дії: 45 день
+                                <p>
+                                    термін дії: 45 день
+                                </p>
                             </li>
                             <li class="rates__item">
-                                <p>
+                                <p class="rates__info">
                                     пенсійний
                                 </p>
-                                <div>
+                                <span class="rates__price">
                                     730
-                                </div>
+                                </span>
                                 <span>грн</span>
-                                термін дії: 45 день
+                                <p>
+                                    термін дії: 45 день
+                                </p>
                             </li>
                         </ul>
                     </li>
@@ -976,740 +1008,742 @@
                         </ul>
                     </li>
                 </ul>
-            </section>
-            <section class="activity">
-                <div class="container">
-                    <h2 class="activity__title">
-                        активність
-                    </h2>
-                    <div class="for-whom__accordion accordion">
-                        <div class="accordion__wrapper">
-                            <div class="accordion__inner">
-                                <svg class="accordion__svg" width="130px" height="90px">
-                                    <use xlink:href="images/sprite.svg#run">
-                                    </use>
-                                </svg>
-                                біговий клуб «tigerrunclub»
-                                <button class="accordion__btn" type="button">
-                                    <span class="sr-only">
-                                        Плюсик открывающий дополнительную информацию
-                                    </span>
-                                </button>
-                            </div>
-                            <div class="accordion__text">
-                                вже четвертий рік одним із напрямків нашої роботи є біговий клуб «tigerrunclub», в
-                                рамках
-                                якого відбуваються щонеділі
-                                безкоштовні бігові тренування. ми підготуємо вас до змагань, навчимо бігати, розкажемо,
-                                що
-                                одягати на пробіжку, або
-                                просто створимо гарну компанію. члени клубу - це вже одна велика сімя. де не тільки
-                                бігають
-                                разом, а і п’ють чай, їздять
-                                на змагання, відпочивают.
-                            </div>
+            </div>
+        </section>
+
+        <section class="activity">
+            <div class="container">
+                <h2 class="activity__title">
+                    активність
+                </h2>
+                <div class="for-whom__accordion accordion">
+                    <div class="accordion__wrapper">
+                        <div class="accordion__inner">
+                            <svg class="accordion__svg" width="130px" height="90px">
+                                <use xlink:href="images/sprite.svg#run">
+                                </use>
+                            </svg>
+                            біговий клуб «tigerrunclub»
+                            <button class="accordion__btn" type="button">
+                                <span class="sr-only">
+                                    Плюсик открывающий дополнительную информацию
+                                </span>
+                            </button>
                         </div>
-                        <div class="accordion__wrapper">
-                            <div class="accordion__inner">
-                                <svg class="accordion__svg" width="37px" height="49px">
-                                    <use xlink:href="images/sprite.svg#jump">
-                                    </use>
-                                </svg>
-                                забіги з перешкодами
-                                <button class="accordion__btn" type="button">
-                                    <span class="sr-only">
-                                        Плюсик открывающий дополнительную информацию
-                                    </span>
-                                </button>
-                            </div>
-                            <div class="accordion__text">
-                                Наш клуб - один з небагатьох в Україні, що може якісно вас підготувати до забігів з
-                                перешкодами. Адже наші тренери є постійними учасниками і призерами таких змагань, як
-                                «Dyka
-                                gonka”, “Spartan Race”, “Race nation”. Адже саме у нас ви зможете відпрацьовувати
-                                техніку
-                                проходження більше 30 перешкод.
-                            </div>
+                        <div class="accordion__text">
+                            вже четвертий рік одним із напрямків нашої роботи є біговий клуб «tigerrunclub», в
+                            рамках
+                            якого відбуваються щонеділі
+                            безкоштовні бігові тренування. ми підготуємо вас до змагань, навчимо бігати, розкажемо,
+                            що
+                            одягати на пробіжку, або
+                            просто створимо гарну компанію. члени клубу - це вже одна велика сімя. де не тільки
+                            бігають
+                            разом, а і п’ють чай, їздять
+                            на змагання, відпочивают.
                         </div>
-                        <div class="accordion__wrapper">
-                            <div class="accordion__inner">
-                                <svg class="accordion__svg" width="37px" height="48px">
-                                    <use xlink:href="images/sprite.svg#walking">
-                                    </use>
-                                </svg>
-                                змагання ninja games
-                                <button class="accordion__btn" type="button">
-                                    <span class="sr-only">
-                                        Плюсик открывающий дополнительную информацию
-                                    </span>
-                                </button>
-                            </div>
-                            <div class="accordion__text">
-                                Ninja games - це не про біг, це про силу рук і характеру. Це про швидкість і
-                                витривалість,
-                                які потрібно помістити у 8 хвилин. Це хвиля напрямку OCR, де не потрібно бігати, де одні
-                                перешкоди і ти. І саме ми єдині (і тепер точно перші) проводимо такі змагання в Україні.
-                                Хочеш випробувати себе - записуйся на наступні!
-                            </div>
+                    </div>
+                    <div class="accordion__wrapper">
+                        <div class="accordion__inner">
+                            <svg class="accordion__svg" width="37px" height="49px">
+                                <use xlink:href="images/sprite.svg#jump">
+                                </use>
+                            </svg>
+                            забіги з перешкодами
+                            <button class="accordion__btn" type="button">
+                                <span class="sr-only">
+                                    Плюсик открывающий дополнительную информацию
+                                </span>
+                            </button>
+                        </div>
+                        <div class="accordion__text">
+                            Наш клуб - один з небагатьох в Україні, що може якісно вас підготувати до забігів з
+                            перешкодами. Адже наші тренери є постійними учасниками і призерами таких змагань, як
+                            «Dyka
+                            gonka”, “Spartan Race”, “Race nation”. Адже саме у нас ви зможете відпрацьовувати
+                            техніку
+                            проходження більше 30 перешкод.
+                        </div>
+                    </div>
+                    <div class="accordion__wrapper">
+                        <div class="accordion__inner">
+                            <svg class="accordion__svg" width="37px" height="48px">
+                                <use xlink:href="images/sprite.svg#walking">
+                                </use>
+                            </svg>
+                            змагання ninja games
+                            <button class="accordion__btn" type="button">
+                                <span class="sr-only">
+                                    Плюсик открывающий дополнительную информацию
+                                </span>
+                            </button>
+                        </div>
+                        <div class="accordion__text">
+                            Ninja games - це не про біг, це про силу рук і характеру. Це про швидкість і
+                            витривалість,
+                            які потрібно помістити у 8 хвилин. Це хвиля напрямку OCR, де не потрібно бігати, де одні
+                            перешкоди і ти. І саме ми єдині (і тепер точно перші) проводимо такі змагання в Україні.
+                            Хочеш випробувати себе - записуйся на наступні!
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="schedule">
-                <div class="container">
-                    <h2 class="schedule">розклад</h2>
-                    <table class="about__table">
-                        <tr class="about__tr">
-                            <td class="about__td">
-                                Дата та час
-                            </td>
-                            <td class="about__td">
-                                Понеділок
-                            </td>
-                            <td class="about__td">
-                                Вівторок
-                            </td>
-                            <td class="about__td">
-                                Середа
-                            </td>
-                            <td class="about__td">
-                                Четвер
-                            </td>
-                            <td class="about__td">
-                                П’ятниця
-                            </td>
-                            <td class="about__td">
-                                Субота
-                            </td>
-                        </tr>
-                        <tr class="about__tr">
-                            <td class="about__td">
-                                08:00
-                            </td>
-                            <td class="about__td">
+        <section class="schedule">
+            <div class="container">
+                <h2 class="schedule">розклад</h2>
+                <table class="about__table">
+                    <tr class="about__tr">
+                        <td class="about__td">
+                            Дата та час
+                        </td>
+                        <td class="about__td">
+                            Понеділок
+                        </td>
+                        <td class="about__td">
+                            Вівторок
+                        </td>
+                        <td class="about__td">
+                            Середа
+                        </td>
+                        <td class="about__td">
+                            Четвер
+                        </td>
+                        <td class="about__td">
+                            П’ятниця
+                        </td>
+                        <td class="about__td">
+                            Субота
+                        </td>
+                    </tr>
+                    <tr class="about__tr">
+                        <td class="about__td">
+                            08:00
+                        </td>
+                        <td class="about__td">
 
-                            </td>
-                            <td class="about__td">
+                        </td>
+                        <td class="about__td">
 
-                            </td>
-                            <td class="about__td">
+                        </td>
+                        <td class="about__td">
 
-                            </td>
+                        </td>
 
-                            </td>
-                            <td class="about__td">
+                        </td>
+                        <td class="about__td">
 
-                            </td>
-                            <td class="about__td">
+                        </td>
+                        <td class="about__td">
 
-                            </td>
-                        </tr>
-                        <tr class="about__tr">
-                            <td class="about__td">
-                                09:00
-                            </td>
-                            <td class="about__td">
-                                TRX- Strong
-                                Тренер: Людмила Олексюк
-                            </td>
-                            <td class="about__td">
-                                Pilates
-                                Тренер: Юлія Солдатенко
-                            </td>
-                            <td class="about__td">
-                                TRX - Functional
-                                Тренер: Людмила Олексюк
-                            </td>
+                        </td>
+                    </tr>
+                    <tr class="about__tr">
+                        <td class="about__td">
+                            09:00
+                        </td>
+                        <td class="about__td">
+                            TRX- Strong
+                            Тренер: Людмила Олексюк
+                        </td>
+                        <td class="about__td">
                             Pilates
                             Тренер: Юлія Солдатенко
-                            </td>
-                            <td class="about__td">
-                                Tabata
-                                Тренер: Людмила Олексюк
-                            </td>
-                            <td class="about__td">
-                                Попа + прес
-                                Тренер: Алла Попова
-                            </td>
-                        </tr>
-                        <tr class="about__tr">
-                            <td class="about__td">
-                                10:00
-                            </td>
-                            <td class="about__td">
-                                TRX - Start
-                                Тренер: Юлія Солдатенко
-                            </td>
-                            <td class="about__td">
-                                Procedos 9
-                                Тренер: Людмила Варган
-                            </td>
-                            <td class="about__td">
-                                TRX - Start
-                                Тренер: Юлія Солдатенко
-                            </td>
-                            Functional body
+                        </td>
+                        <td class="about__td">
+                            TRX - Functional
+                            Тренер: Людмила Олексюк
+                        </td>
+                        Pilates
+                        Тренер: Юлія Солдатенко
+                        </td>
+                        <td class="about__td">
+                            Tabata
+                            Тренер: Людмила Олексюк
+                        </td>
+                        <td class="about__td">
+                            Попа + прес
+                            Тренер: Алла Попова
+                        </td>
+                    </tr>
+                    <tr class="about__tr">
+                        <td class="about__td">
+                            10:00
+                        </td>
+                        <td class="about__td">
+                            TRX - Start
+                            Тренер: Юлія Солдатенко
+                        </td>
+                        <td class="about__td">
+                            Procedos 9
                             Тренер: Людмила Варган
-                            </td>
-                            <td class="about__td">
-                                TRX - Start
-                                Тренер: Юлія Солдатенко
-                            </td>
-                            <td class="about__td">
-                                Full Body Stretching
-                                Тренер: Надія Пінчук
-                            </td>
-                        </tr>
-                        <tr class="about__tr">
-                            <td class="about__td">
-                                11:00
-                            </td>
-                            <td class="about__td">
+                        </td>
+                        <td class="about__td">
+                            TRX - Start
+                            Тренер: Юлія Солдатенко
+                        </td>
+                        Functional body
+                        Тренер: Людмила Варган
+                        </td>
+                        <td class="about__td">
+                            TRX - Start
+                            Тренер: Юлія Солдатенко
+                        </td>
+                        <td class="about__td">
+                            Full Body Stretching
+                            Тренер: Надія Пінчук
+                        </td>
+                    </tr>
+                    <tr class="about__tr">
+                        <td class="about__td">
+                            11:00
+                        </td>
+                        <td class="about__td">
 
-                            </td>
-                            <td class="about__td">
+                        </td>
+                        <td class="about__td">
 
-                            </td>
-                            <td class="about__td">
+                        </td>
+                        <td class="about__td">
 
-                            </td>
+                        </td>
 
-                            </td>
-                            <td class="about__td">
+                        </td>
+                        <td class="about__td">
 
-                            </td>
-                            <td class="about__td">
-                                TRX - Start
-                                Тренер: Тетяна Богдан
-                            </td>
-                        </tr>
-                        <tr class="about__tr">
-                            <td class="about__td">
-                                12:00
-                            </td>
-                            <td class="about__td">
+                        </td>
+                        <td class="about__td">
+                            TRX - Start
+                            Тренер: Тетяна Богдан
+                        </td>
+                    </tr>
+                    <tr class="about__tr">
+                        <td class="about__td">
+                            12:00
+                        </td>
+                        <td class="about__td">
 
-                            </td>
-                            <td class="about__td">
+                        </td>
+                        <td class="about__td">
 
-                            </td>
-                            <td class="about__td">
+                        </td>
+                        <td class="about__td">
 
-                            </td>
+                        </td>
 
-                            </td>
-                            <td class="about__td">
+                        </td>
+                        <td class="about__td">
 
-                            </td>
-                            <td class="about__td">
-                                OCR
-                                Тренер: Королькова Ольга
-                            </td>
-                        </tr>
+                        </td>
+                        <td class="about__td">
+                            OCR
+                            Тренер: Королькова Ольга
+                        </td>
+                    </tr>
 
-                        <tr class="about__tr">
-                            <td class="about__td">
-                                13:00
-                            </td>
-                            <td class="about__td">
-                                Tabata
-                                Тренер: Королькова Ольга
-                            </td>
-                            <td class="about__td">
-                                Functional traning
-                                Тренер: Алла Попова
-                            </td>
-                            <td class="about__td">
-                                TRX- Strong
-                                Тренер: Королькова Ольга
-                            </td>
+                    <tr class="about__tr">
+                        <td class="about__td">
+                            13:00
+                        </td>
+                        <td class="about__td">
+                            Tabata
+                            Тренер: Королькова Ольга
+                        </td>
+                        <td class="about__td">
+                            Functional traning
+                            Тренер: Алла Попова
+                        </td>
+                        <td class="about__td">
+                            TRX- Strong
+                            Тренер: Королькова Ольга
+                        </td>
+                        TRX - Start
+                        Тренер: Дмитро Сідоров
+                        </td>
+                        <td class="about__td">
+                            TRX - Functional
+                            Тренер: Королькова Ольга
+                        </td>
+                        <td class="about__td">
+                            Step aerobics
+                            Тренер: Юлія Солдатенко
+                        </td>
+                    </tr>
+                    <tr class="about__tr">
+                        <td class="about__td">
+                            14:00
+                        </td>
+                        <td class="about__td">
                             TRX - Start
                             Тренер: Дмитро Сідоров
-                            </td>
-                            <td class="about__td">
-                                TRX - Functional
-                                Тренер: Королькова Ольга
-                            </td>
-                            <td class="about__td">
-                                Step aerobics
-                                Тренер: Юлія Солдатенко
-                            </td>
-                        </tr>
-                        <tr class="about__tr">
-                            <td class="about__td">
-                                14:00
-                            </td>
-                            <td class="about__td">
-                                TRX - Start
-                                Тренер: Дмитро Сідоров
-                            </td>
-                            <td class="about__td">
-                                Power Stretching
-                                Тренер: Алла Попова
-                            </td>
-                            <td class="about__td">
-                                TRX - Start
-                                Тренер: Дмитро Сідоров
-                            </td>
-                            <td class="about__td">
-                                MFR+ Mobility
-                                Тренер: Людмила Олексюк
-                            </td>
-                            <td class="about__td">
-                                TRX - Start
-                                Тренер: Дмитро Сідоров
-                            </td>
-                            <td class="about__td">
-                            </td>
-                        </tr>
-                        <tr class="about__tr">
-                            <td class="about__td">
-                                15:00
-                            </td>
-                            <td class="about__td">
-                            </td>
-                            <td class="about__td">
-                            </td>
-                            <td class="about__td">
-                                Бокс (дитячий)
-                                Тренер: Тімур Флячинській
-                            </td>
-                            <td class="about__td">
-                            </td>
-                            </td>
-                            <td class="about__td">
-                                Бокс (дитячий)
-                                Тренер: Тімур Флячинській
-                            </td>
-                            <td class="about__td">
-                            </td>
-                        </tr>
-                        <tr class="about__tr">
-                            <td class="about__td">
-                                16:00
-                            </td>
-                            <td class="about__td">
-                                Бокс (дитячий)
-                                Тренер: Тімур Флячинській
-                            </td>
-                            <td class="about__td">
-                                Ninja kids
-                                Тренер: Дмитро Сідоров
-                            </td>
-                            <td class="about__td">
-                                Паркур
-                                Тренер: Роман Сачук
-                            </td>
-                            <td class="about__td">
-                                Ninja kids
-                                Тренер: Дмитро Сідоров
-                            </td>
-                            <td class="about__td">
-                                Паркур
-                                Тренер: Роман Сачук
-                            </td>
-                            <td class="about__td">
-                            </td>
-                        </tr>
-                        <tr class="about__tr">
-                            <td class="about__td">
-                                17:20
-                            </td>
-                            <td class="about__td">
-                                Tabata
-                                Тренер: Тетяна Богдан
-                            </td>
-                            <td class="about__td">
-                                Full Body Stretching
-                                Тренер: Надія Пінчук
-                            </td>
-                            <td class="about__td">
-                                Попа + прес
-                                Тренер: Тетяна Богдан
-                            </td>
-                            <td class="about__td">
-                                Шпагат
-                                Тренер: Надія Пінчук
-                            </td>
-                            <td class="about__td">
-                                TRX - Functional
-                                Тренер: Тетяна Богдан
-                            </td>
-                            <td class="about__td">
-                            </td>
-                        </tr>
-                        <tr class="about__tr">
-                            <td class="about__td">
-                                18:20
-                            </td>
-                            <td class="about__td">
-                                TRX - Functional
-                                Тренер: Дмитро Сідоров
-                            </td>
-                            <td class="about__td">
-                                TRX - Start
-                                Тренер: Тетяна Богдан
-                            </td>
-                            <td class="about__td">
-                                Tabata
-                                Тренер: Дмитро Сідоров
-                            </td>
-                            <td class="about__td">
-                                TRX - Start
-                                Тренер: Тетяна Богдан
-                            </td>
-                            <td class="about__td">
-                                TRX- Strong
-                                Тренер: Дмитро Сідоров
-                            </td>
-                            <td class="about__td">
-                            </td>
-                        </tr>
-                        <tr class="about__tr">
-                            <td class="about__td">
-                                19:20
-                            </td>
-                            <td class="about__td">
-                                Pilates
-                                Тренер: Юлія Солдатенко
-                            </td>
-                            <td class="about__td">
-                                TRX- Strong
-                                Тренер: Королькова Ольга
-                            </td>
-                            <td class="about__td">
-                                Pilates
-                                Тренер: Юлія Солдатенко
-                            </td>
-                            </td>
-                            <td class="about__td">
-                                TRX - Functional
-                                Тренер: Королькова Ольга
-                            </td>
-                            <td class="about__td">
-                                Pilates
-                                Тренер: Юлія Солдатенко
-                            </td>
-                            <td class="about__td">
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-            </section>
-
-            <section class="coaches">
-                <div class="container">
-                    <div class="swiper">
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="slider-coaches">
-                                    <div class="slider-coaches__wrapper">
-                                        <img src="images/coaches/2.jpg" alt="Дмитро Сідоров фітнес тренер">
-                                        <div class="slider-coaches__inner">
-                                            Дмитро Сідоров фітнес тренер
-                                            <button class="for-whom__btn" type="button">
-                                                <span class="sr-only">
-                                                    Плюсик открывающий дополнительную информацию
-                                                </span>
-                                            </button>
-                                            <ul class="slider-coaches__items">
-                                                <li class="slider-coaches__item">
-                                                    «Сакральна архітектура тіла» (2011, 2012)
-                                                </li>
-                                                Пройшла Сертифікацію:
-                                                <li class="slider-coaches__item"> «Дієтологія. Алгоритм складення
-                                                    программ
-                                                    по спортивному харчуванню» (2015)
-                                                </li>
-                                                <li class="slider-coaches__item">«Дієтологія. Харчування жінок в період
-                                                    підготовки до вагітності, вагітності
-                                                    і
-                                                    грудного
-                                                    вскармливания» (2015)
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    «Групові програми (Базовий курс)» (2016)
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    «Групові програми/Навики інструктора. Аеробіка і степ-аеробіка»
-                                                    (2016)
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    «Силове групове тренування» (2016)
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    «Персональний тренер тренажерної зали (Рівень І-ІІІ)» (2016)
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    «Курс теоретичної підготовки для професіонального інструктора»
-                                                    (2016)
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    «Персональний тренер/ Coremaster, TRX» (2016)
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    «Програма функціонального вдосконалення тіла/Coremaster training»
-                                                    (2017)
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    «Персональний функціональний тренер (гиря, м’яч , босу, мішок,
-                                                    канат)»
-                                                    (2017)
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    «Курс TRX SUSPENSION TRAINING STC» (2017)
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    «Основи реабілітаційного тренінгу»(2017)
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    Курс TRX sport medicine (2018)
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    «Hiit» (2018)
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    «Школа здоров`я Лікаря Толстікової». Анатоміко-фізіологічні і
-                                                    біохімічні
-                                                    основи
-                                                    травної
-                                                    системи. Основи дієтології. Рівень І, ІІ, III (2018-2019)
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    HIIT (2020)
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    Принципи руху в 3D (2021)gulp
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    «TABATA» (2016)
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    «Міжхребцеві грижі. Тригерні зони. Діагностика. Особливості роботи з
-                                                    клієнтами»(2017)
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    «Харчування і тренування– системний підхід в корекції ваги»(2017)
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    «Гібридний тренінг»(2017)
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    «Power stretching» (2017)
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    «Парний stretching » (2017)
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    «Fitness stretching» (2017)
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    «Duet stretching» (2017)
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    «Функціональний тренінг з канатами та важкими скакалками»(2017)
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    «Функціональний тренінг на нестабільних поверхнях»(2017)
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    «Незамінні TRX вправи:основи і прогресії. TRX Yoga» (2017)
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    «Функціональне тренування з використанням петель Coremaster, TRX»
-                                                    (2017)
-                                                </li>
-                                                <li class="slider-coaches__item"> EMOM(2019)</li>
-                                            </ul>
-                                            <!-- <h3 class="slider-coaches__subtitle">
-                                            Освіта:
-                                            Вища педагогічна
-                                        </h3> -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class=" swiper-slide">
-                                <div class="slider-coaches">
-                                    <div class="slider-coaches__wrapper">
-                                        <img src="images/coaches/2.jpg" alt="Дмитро Сідоров фітнес тренер">
-                                        <div class="slider-coaches__inner">
-                                            Дмитро Сідоров фітнес тренер
-                                            <button class="for-whom__btn" type="button">
-                                                <span class="sr-only">
-                                                    Плюсик открывающий дополнительную информацию
-                                                </span>
-                                            </button>
-                                            <ul class="slider-coaches__items">
-                                                <li class="slider-coaches__item">
-                                                    «Сакральна архітектура тіла» (2011, 2012)
-                                                </li>
-                                                Пройшла Сертифікацію:
-                                                <li class="slider-coaches__item"> «Дієтологія. Алгоритм складення
-                                                    программ
-                                                    по спортивному харчуванню» (2015)
-                                                </li>
-                                                <li class="slider-coaches__item">«Дієтологія. Харчування жінок в період
-                                                    підготовки до вагітності, вагітності
-                                                    і
-                                                    грудного
-                                                    вскармливания» (2015)
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    «Групові програми (Базовий курс)» (2016)
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    «Групові програми/Навики інструктора. Аеробіка і степ-аеробіка»
-                                                    (2016)
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    «Силове групове тренування» (2016)
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    «Персональний тренер тренажерної зали (Рівень І-ІІІ)» (2016)
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    «Курс теоретичної підготовки для професіонального інструктора»
-                                                    (2016)
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    «Персональний тренер/ Coremaster, TRX» (2016)
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    «Програма функціонального вдосконалення тіла/Coremaster training»
-                                                    (2017)
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    «Персональний функціональний тренер (гиря, м’яч , босу, мішок,
-                                                    канат)»
-                                                    (2017)
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    «Курс TRX SUSPENSION TRAINING STC» (2017)
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    «Основи реабілітаційного тренінгу»(2017)
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    Курс TRX sport medicine (2018)
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    «Hiit» (2018)
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    «Школа здоров`я Лікаря Толстікової». Анатоміко-фізіологічні і
-                                                    біохімічні
-                                                    основи
-                                                    травної
-                                                    системи. Основи дієтології. Рівень І, ІІ, III (2018-2019)
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    HIIT (2020)
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    Принципи руху в 3D (2021)gulp
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    «TABATA» (2016)
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    «Міжхребцеві грижі. Тригерні зони. Діагностика. Особливості роботи з
-                                                    клієнтами»(2017)
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    «Харчування і тренування– системний підхід в корекції ваги»(2017)
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    «Гібридний тренінг»(2017)
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    «Power stretching» (2017)
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    «Парний stretching » (2017)
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    «Fitness stretching» (2017)
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    «Duet stretching» (2017)
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    «Функціональний тренінг з канатами та важкими скакалками»(2017)
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    «Функціональний тренінг на нестабільних поверхнях»(2017)
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    «Незамінні TRX вправи:основи і прогресії. TRX Yoga» (2017)
-                                                </li>
-                                                <li class="slider-coaches__item">
-                                                    «Функціональне тренування з використанням петель Coremaster, TRX»
-                                                    (2017)
-                                                </li>
-                                                <li class="slider-coaches__item"> EMOM(2019)</li>
-                                            </ul>
-                                            <!-- <h3 class="slider-coaches__subtitle">
-                                            Освіта:
-                                            Вища педагогічна
-                                        </h3> -->
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="slider-coaches">
-                                    <div class="slider-coaches__item">
-                                        <img src="images/coaches/3.jpg" alt="Попова Алла фітнес тренер">
-                                        <div class="slider-coaches__text">
-                                            <p>
-                                                Попова Алла фітнес тренер
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="blog">
-                <div class="container">
-                    <h2 class="blog__title">
-                        новини та акції
-                    </h2>
-                    <div class="swiper-blog">
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-wrapper">
-                            <div class="slider-slide">
-                                <div class="slider-slide__item">
-                                    <img class="slider-slide__img" src="images/"
-                                        alt="Правила відвідування TRX-club PANTERA">
-                                    <h3 class="slider-slide__title">
-                                        Правила відвідування TRX-club PANTERA
-                                    </h3>
-                                    <a class="slider-slide__link" href="#">Детальніше</a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                content2
-                            </div>
-                            <div class="swiper-slide">
-                                content3
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <div id="map" style="width: 100%; height: 500px;">
+                        </td>
+                        <td class="about__td">
+                            Power Stretching
+                            Тренер: Алла Попова
+                        </td>
+                        <td class="about__td">
+                            TRX - Start
+                            Тренер: Дмитро Сідоров
+                        </td>
+                        <td class="about__td">
+                            MFR+ Mobility
+                            Тренер: Людмила Олексюк
+                        </td>
+                        <td class="about__td">
+                            TRX - Start
+                            Тренер: Дмитро Сідоров
+                        </td>
+                        <td class="about__td">
+                        </td>
+                    </tr>
+                    <tr class="about__tr">
+                        <td class="about__td">
+                            15:00
+                        </td>
+                        <td class="about__td">
+                        </td>
+                        <td class="about__td">
+                        </td>
+                        <td class="about__td">
+                            Бокс (дитячий)
+                            Тренер: Тімур Флячинській
+                        </td>
+                        <td class="about__td">
+                        </td>
+                        </td>
+                        <td class="about__td">
+                            Бокс (дитячий)
+                            Тренер: Тімур Флячинській
+                        </td>
+                        <td class="about__td">
+                        </td>
+                    </tr>
+                    <tr class="about__tr">
+                        <td class="about__td">
+                            16:00
+                        </td>
+                        <td class="about__td">
+                            Бокс (дитячий)
+                            Тренер: Тімур Флячинській
+                        </td>
+                        <td class="about__td">
+                            Ninja kids
+                            Тренер: Дмитро Сідоров
+                        </td>
+                        <td class="about__td">
+                            Паркур
+                            Тренер: Роман Сачук
+                        </td>
+                        <td class="about__td">
+                            Ninja kids
+                            Тренер: Дмитро Сідоров
+                        </td>
+                        <td class="about__td">
+                            Паркур
+                            Тренер: Роман Сачук
+                        </td>
+                        <td class="about__td">
+                        </td>
+                    </tr>
+                    <tr class="about__tr">
+                        <td class="about__td">
+                            17:20
+                        </td>
+                        <td class="about__td">
+                            Tabata
+                            Тренер: Тетяна Богдан
+                        </td>
+                        <td class="about__td">
+                            Full Body Stretching
+                            Тренер: Надія Пінчук
+                        </td>
+                        <td class="about__td">
+                            Попа + прес
+                            Тренер: Тетяна Богдан
+                        </td>
+                        <td class="about__td">
+                            Шпагат
+                            Тренер: Надія Пінчук
+                        </td>
+                        <td class="about__td">
+                            TRX - Functional
+                            Тренер: Тетяна Богдан
+                        </td>
+                        <td class="about__td">
+                        </td>
+                    </tr>
+                    <tr class="about__tr">
+                        <td class="about__td">
+                            18:20
+                        </td>
+                        <td class="about__td">
+                            TRX - Functional
+                            Тренер: Дмитро Сідоров
+                        </td>
+                        <td class="about__td">
+                            TRX - Start
+                            Тренер: Тетяна Богдан
+                        </td>
+                        <td class="about__td">
+                            Tabata
+                            Тренер: Дмитро Сідоров
+                        </td>
+                        <td class="about__td">
+                            TRX - Start
+                            Тренер: Тетяна Богдан
+                        </td>
+                        <td class="about__td">
+                            TRX- Strong
+                            Тренер: Дмитро Сідоров
+                        </td>
+                        <td class="about__td">
+                        </td>
+                    </tr>
+                    <tr class="about__tr">
+                        <td class="about__td">
+                            19:20
+                        </td>
+                        <td class="about__td">
+                            Pilates
+                            Тренер: Юлія Солдатенко
+                        </td>
+                        <td class="about__td">
+                            TRX- Strong
+                            Тренер: Королькова Ольга
+                        </td>
+                        <td class="about__td">
+                            Pilates
+                            Тренер: Юлія Солдатенко
+                        </td>
+                        </td>
+                        <td class="about__td">
+                            TRX - Functional
+                            Тренер: Королькова Ольга
+                        </td>
+                        <td class="about__td">
+                            Pilates
+                            Тренер: Юлія Солдатенко
+                        </td>
+                        <td class="about__td">
+                        </td>
+                    </tr>
+                </table>
             </div>
+        </section>
+
+        <section class="coaches">
+            <div class="container">
+                <div class="swiper">
+                    <!-- <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div> -->
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slider-coaches">
+                                <div class="slider-coaches__wrapper">
+                                    <img src="images/coaches/2.jpg" alt="Дмитро Сідоров фітнес тренер">
+                                    <div class="slider-coaches__inner">
+                                        Дмитро Сідоров фітнес тренер
+                                        <button class="for-whom__btn" type="button">
+                                            <span class="sr-only">
+                                                Плюсик открывающий дополнительную информацию
+                                            </span>
+                                        </button>
+                                        <ul class="slider-coaches__items">
+                                            <li class="slider-coaches__item">
+                                                «Сакральна архітектура тіла» (2011, 2012)
+                                            </li>
+                                            Пройшла Сертифікацію:
+                                            <li class="slider-coaches__item"> «Дієтологія. Алгоритм складення
+                                                программ
+                                                по спортивному харчуванню» (2015)
+                                            </li>
+                                            <li class="slider-coaches__item">«Дієтологія. Харчування жінок в період
+                                                підготовки до вагітності, вагітності
+                                                і
+                                                грудного
+                                                вскармливания» (2015)
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                «Групові програми (Базовий курс)» (2016)
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                «Групові програми/Навики інструктора. Аеробіка і степ-аеробіка»
+                                                (2016)
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                «Силове групове тренування» (2016)
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                «Персональний тренер тренажерної зали (Рівень І-ІІІ)» (2016)
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                «Курс теоретичної підготовки для професіонального інструктора»
+                                                (2016)
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                «Персональний тренер/ Coremaster, TRX» (2016)
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                «Програма функціонального вдосконалення тіла/Coremaster training»
+                                                (2017)
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                «Персональний функціональний тренер (гиря, м’яч , босу, мішок,
+                                                канат)»
+                                                (2017)
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                «Курс TRX SUSPENSION TRAINING STC» (2017)
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                «Основи реабілітаційного тренінгу»(2017)
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                Курс TRX sport medicine (2018)
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                «Hiit» (2018)
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                «Школа здоров`я Лікаря Толстікової». Анатоміко-фізіологічні і
+                                                біохімічні
+                                                основи
+                                                травної
+                                                системи. Основи дієтології. Рівень І, ІІ, III (2018-2019)
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                HIIT (2020)
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                Принципи руху в 3D (2021)gulp
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                «TABATA» (2016)
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                «Міжхребцеві грижі. Тригерні зони. Діагностика. Особливості роботи з
+                                                клієнтами»(2017)
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                «Харчування і тренування– системний підхід в корекції ваги»(2017)
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                «Гібридний тренінг»(2017)
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                «Power stretching» (2017)
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                «Парний stretching » (2017)
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                «Fitness stretching» (2017)
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                «Duet stretching» (2017)
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                «Функціональний тренінг з канатами та важкими скакалками»(2017)
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                «Функціональний тренінг на нестабільних поверхнях»(2017)
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                «Незамінні TRX вправи:основи і прогресії. TRX Yoga» (2017)
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                «Функціональне тренування з використанням петель Coremaster, TRX»
+                                                (2017)
+                                            </li>
+                                            <li class="slider-coaches__item"> EMOM(2019)</li>
+                                        </ul>
+                                        <!-- <h3 class="slider-coaches__subtitle">
+                                            Освіта:
+                                            Вища педагогічна
+                                        </h3> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" swiper-slide">
+                            <div class="slider-coaches">
+                                <div class="slider-coaches__wrapper">
+                                    <img src="images/coaches/2.jpg" alt="Дмитро Сідоров фітнес тренер">
+                                    <div class="slider-coaches__inner">
+                                        Дмитро Сідоров фітнес тренер
+                                        <button class="for-whom__btn" type="button">
+                                            <span class="sr-only">
+                                                Плюсик открывающий дополнительную информацию
+                                            </span>
+                                        </button>
+                                        <ul class="slider-coaches__items">
+                                            <li class="slider-coaches__item">
+                                                «Сакральна архітектура тіла» (2011, 2012)
+                                            </li>
+                                            Пройшла Сертифікацію:
+                                            <li class="slider-coaches__item"> «Дієтологія. Алгоритм складення
+                                                программ
+                                                по спортивному харчуванню» (2015)
+                                            </li>
+                                            <li class="slider-coaches__item">«Дієтологія. Харчування жінок в період
+                                                підготовки до вагітності, вагітності
+                                                і
+                                                грудного
+                                                вскармливания» (2015)
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                «Групові програми (Базовий курс)» (2016)
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                «Групові програми/Навики інструктора. Аеробіка і степ-аеробіка»
+                                                (2016)
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                «Силове групове тренування» (2016)
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                «Персональний тренер тренажерної зали (Рівень І-ІІІ)» (2016)
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                «Курс теоретичної підготовки для професіонального інструктора»
+                                                (2016)
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                «Персональний тренер/ Coremaster, TRX» (2016)
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                «Програма функціонального вдосконалення тіла/Coremaster training»
+                                                (2017)
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                «Персональний функціональний тренер (гиря, м’яч , босу, мішок,
+                                                канат)»
+                                                (2017)
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                «Курс TRX SUSPENSION TRAINING STC» (2017)
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                «Основи реабілітаційного тренінгу»(2017)
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                Курс TRX sport medicine (2018)
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                «Hiit» (2018)
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                «Школа здоров`я Лікаря Толстікової». Анатоміко-фізіологічні і
+                                                біохімічні
+                                                основи
+                                                травної
+                                                системи. Основи дієтології. Рівень І, ІІ, III (2018-2019)
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                HIIT (2020)
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                Принципи руху в 3D (2021)gulp
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                «TABATA» (2016)
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                «Міжхребцеві грижі. Тригерні зони. Діагностика. Особливості роботи з
+                                                клієнтами»(2017)
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                «Харчування і тренування– системний підхід в корекції ваги»(2017)
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                «Гібридний тренінг»(2017)
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                «Power stretching» (2017)
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                «Парний stretching » (2017)
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                «Fitness stretching» (2017)
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                «Duet stretching» (2017)
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                «Функціональний тренінг з канатами та важкими скакалками»(2017)
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                «Функціональний тренінг на нестабільних поверхнях»(2017)
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                «Незамінні TRX вправи:основи і прогресії. TRX Yoga» (2017)
+                                            </li>
+                                            <li class="slider-coaches__item">
+                                                «Функціональне тренування з використанням петель Coremaster, TRX»
+                                                (2017)
+                                            </li>
+                                            <li class="slider-coaches__item"> EMOM(2019)</li>
+                                        </ul>
+                                        <!-- <h3 class="slider-coaches__subtitle">
+                                            Освіта:
+                                            Вища педагогічна
+                                        </h3> -->
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-coaches">
+                                <div class="slider-coaches__item">
+                                    <img src="images/coaches/3.jpg" alt="Попова Алла фітнес тренер">
+                                    <div class="slider-coaches__text">
+                                        <p>
+                                            Попова Алла фітнес тренер
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog">
+            <div class="container">
+                <h2 class="blog__title">
+                    новини та акції
+                </h2>
+                <div class="swiper-blog">
+                    <!-- <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div> -->
+                    <div class="swiper-wrapper">
+                        <div class="slider-slide">
+                            <div class="slider-slide__item">
+                                <img class="slider-slide__img" src="images/"
+                                    alt="Правила відвідування TRX-club PANTERA">
+                                <h3 class="slider-slide__title">
+                                    Правила відвідування TRX-club PANTERA
+                                </h3>
+                                <a class="slider-slide__link" href="#">Детальніше</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            content2
+                        </div>
+                        <div class="swiper-slide">
+                            content3
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="map" style="width: 100%; height: 500px;">
+        </div>
     </main>
 
     <footer class="footer">
@@ -1776,7 +1810,8 @@
 
     <script src="js/main.min.js"></script>
     <!-- <script type="text/javascript" src="js/slick.js"></script> -->
-    <script src="js/slick.min.js"></script>
+    <!-- <script src="js/slick.min.js"></script> -->
+    <!-- <script src="js/jquery.fancybox.min.js"></script> -->
 
 </body>
 
