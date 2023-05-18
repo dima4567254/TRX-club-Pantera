@@ -517,31 +517,11 @@
 
 
 .gallery {
+    padding-top: 70px;
+
+    // не как везде!!!
     &__title {}
 }
-
-
-
-
-.swiper {}
-
-.swiper-button-next {}
-
-.swiper-button-prev {}
-
-.swiper-wrapper {}
-
-.swiper-slide {}
-
-.advantages__picture {}
-
-.advantages__img {}
-
-.swiper-swiper {}
-
-.gallery-slider-big__item {}
-
-.gallery-slider-big__picture {}
 
 .gallery-slider-big {
     &__images {
@@ -650,75 +630,141 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
         cursor: pointer;
-
+        user-select: none;
     }
 
     &__subtitle {
-        font-size: 20px;
+        font-size: 32px;
         text-transform: uppercase;
         margin-right: 25px;
+        font-weight: 500;
+    }
+
+    &__subtitle span {
+        // font-size: 32px;
+        // text-transform: uppercase;
+        // margin-right: 25px;
+        font-weight: 300;
     }
 
     &__svg {
-        transform: rotate(90deg);
+        transition: transform .5s;
+
+        &--active {
+            transform: rotate(180deg);
+        }
+    }
+
+    &__box {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-bottom: 30px;
     }
 
     &__items {
-        // display: none;
-        display: flex;
-        justify-content: space-between;
+        display: none;
+        // overflow: hidden;
+        // opacity: 0;
+        // display: flex;
+        justify-content: flex-start;
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 20px;
         padding-left: 5px;
         padding-right: 5px;
+        margin-bottom: 30px;
+        // transform: translateZ(0%);
+        // transform: translate3d(0);
+        // transition: transform 5.5s;
+        // transition: overflow 5.5s;
+        // !!!когда небудь переделать так что бы работало с одник славом актив
+        // добавить отдельно!!!! transition: transform .5s; в снипеты
+
+        &--active {
+            // overflow: visible;
+            // opacity: 1;
+            display: flex;
+            // transform: translateZ(300%);
+            // transform: translate3d(300%);
+        }
     }
 
     &__item {
-        margin-bottom: 20px;
         border: 1px solid #fee301;
         padding: 30px 35px;
         color: #fff;
         width: 32%;
         font-size: 18px;
-        // white-space:nowrap;
 
-        &:not(:last-child) {
-            margin-bottom: 20px;
+        &--personal {
+            background-color: $ac;
+            color: black;
         }
     }
 
-    &__item p {
-
-        margin-bottom: 10px;
-    }
-
     &__item span {
-        color: #fee301;
         margin-bottom: 10px;
     }
 
     &__info {
         font-size: 25px;
         text-transform: uppercase;
+
+        &--personal {
+            color: #fee301;
+        }
     }
 
     &__price {
         font-weight: 500;
         font-size: 80px;
+        color: #fee301;
+
+        &--personal {
+            color: $black;
+        }
     }
+
+    &__training {
+        font-size: 24px;
+    }
+
+    &__simbol {
+        color: #fee301;
+        font-size: 50px;
+
+        &--personal {
+            color: $black;
+        }
+    }
+
+    &__text {
+        font-size: 14px;
+        color: #fff;
+        margin-bottom: 30px;
+    }
+
+    &__text p {}
 
 
 
     &__price {}
 
-    &__term {}
+    &__term span {
+        font-weight: 900;
+    }
 
     &__info {}
 }
 
-
+.active {
+    display: flex;
+}
 
 
 
