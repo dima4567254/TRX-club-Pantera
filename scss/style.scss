@@ -665,6 +665,9 @@
         padding-left: 5px;
         padding-right: 5px;
         margin-bottom: 30px;
+        // transform: translate(0, 50%);
+        transition: transform 5.5s;
+        transition: translate 5.5s;
     }
 
     &__items {
@@ -673,23 +676,29 @@
         // opacity: 0;
         // display: flex;
         justify-content: flex-start;
+        // flex-direction: column;
         flex-wrap: wrap;
         gap: 20px;
         padding-left: 5px;
         padding-right: 5px;
         margin-bottom: 30px;
-        // transform: translateZ(0%);
-        // transform: translate3d(0);
+        // transform: translate(0, 50%);
+        // // // transform: translate3d(0);
         // transition: transform 5.5s;
+        // transition: translate 5.5s;
         // transition: overflow 5.5s;
+        // нету плавности
         // !!!когда небудь переделать так что бы работало с одник славом актив
         // добавить отдельно!!!! transition: transform .5s; в снипеты
 
         &--active {
             // overflow: visible;
             // opacity: 1;
+            // transition: transform 5.5s;
+            // transform: translate(0, 1%);
+            // transition: translate 5.5s;
             display: flex;
-            // transform: translateZ(300%);
+            // transform: translateX(300%);
             // transform: translate3d(300%);
         }
     }
@@ -765,6 +774,96 @@
 .active {
     display: flex;
 }
+
+
+.schedule {}
+
+.about {
+    color: #5d5d5d;
+    // border:1px solid #000;
+    border-collapse: collapse;
+
+    &__time {
+        background-color: #cecece;
+        text-align: center;
+        padding: 15px 20px;
+        width: 109px;
+        height: 112px;
+
+        &--color {
+            background-color: #bababa;
+        }
+    }
+
+    &__time span {
+        font-weight: 900;
+    }
+
+    &__items {
+        // border-collapse: collapse;
+    }
+
+    &__item {
+        // border-right: 1px solid #bbb;
+        // background-color: #bbb;
+        border: 1px solid transparent;
+        background-color: #efefef;
+        padding: 15px 20px;
+        // border-right: 1px solid #bbb;
+        // border-collapse: collapse;
+        // color: ;
+        // color: #5d5d5d;
+        // text-align: center;
+        // border: 1px solid $white;
+        border-left: none;
+        border-right: none;
+    }
+
+    &__item p {
+        // border-right: 1px solid #bbb;
+        font-weight: 900;
+    }
+
+    &__item span {
+        // border-right: 1px solid #bbb;
+        // font-weight: 900;
+        font-size: 14px;
+    }
+
+
+
+    &__tr {}
+
+    &__td {}
+
+    &__td span {
+        font-weight: 900;
+    }
+
+    &__td p {
+        font-weight: 900;
+    }
+}
+
+
+
+// .activity {}
+
+// .activity__title {}
+
+// .accordion {}
+
+// .accordion__wrapper {}
+
+// .accordion__inner {}
+
+// .accordion__svg {}
+
+// .accordion__btn {}
+
+
+
+// .accordion__text {}
 
 
 
