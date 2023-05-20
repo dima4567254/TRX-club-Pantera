@@ -59,7 +59,7 @@ $('.accordion__wrapper').on('click', function () {
 
 $(document).ready(function () {
     $(".accordion__item").click(function () {
-        $(this).toggleClass("active");
+        $(this).toggleClass("accordion__item--active");
     });
 });
 
@@ -75,6 +75,15 @@ $('.rates__inner').on('click', function (e) {
 $('.rates__subtitle').on('click', function (e) {
     e.preventDefault();
     $(this).next('.rates__svg').toggleClass('rates__svg--active');
+    // $(this).addClass('active');
+
+    // $('.rates__list').removeClass('product-tabs__text--active');
+    // $($(this).attr('href')).addClass('product-tabs__text--active'); /*убирает добовляет класс*/
+});
+
+$('.slider-coaches__inner').on('click', function (e) {
+    e.preventDefault();
+    $(this).next('.slider-coaches__items').toggleClass('slider-coaches__items--active');
     // $(this).addClass('active');
 
     // $('.rates__list').removeClass('product-tabs__text--active');
@@ -123,6 +132,23 @@ $('.gallery-slider-big').slick({
     // variableWidth: true,
 
     asNavFor: '.gallery-slider__items',
+});
+
+$('.slider-coaches').slick({
+    // dots: false,
+    // arrows: false,
+    // centeredSlides: true,
+    // autoplaySpeed: 2000,
+    // autoplay: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: true,
+     prevArrow: '<div class="prev"></div>',
+        nextArrow: '<div class="next"></div>',
+    // fade: true,
+    // variableWidth: true,
+
+    // asNavFor: '.gallery-slider__items',
 });
 
 // $(function name() {
