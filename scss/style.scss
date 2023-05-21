@@ -918,6 +918,7 @@
     display: flex;
     justify-content: space-between;
 
+
     &__boss {
         position: absolute;
         top: 0;
@@ -940,12 +941,36 @@
         // display: block;
         padding: 30px 20px;
         // margin-bottom: 35px;
+        transition: transform 0.5s;
+        cursor: pointer;
+
+        &:focus {
+            color: $focus;
+        }
+
+        &:hover {
+            .slider-coaches__btn {
+                // color: $ac;
+
+                &::before {
+                    transform: rotate(360deg);
+                }
+
+                &::after {
+                    transform: rotate(270deg);
+                }
+            }
+        }
+
+        &:active {
+            color: $active;
+        }
     }
 
     &__images {
         position: relative;
-        // overflow: hidden;
-        overflow: scroll;
+        overflow: hidden;
+        // overflow: scroll;
     }
 
 
@@ -957,6 +982,9 @@
     }
 
     &__items {
+        // list-style: disc;
+        height: 70vh;
+        overflow: overlay;
         display: none;
         // width: 54%;
         color: #fff;
@@ -975,9 +1003,87 @@
         }
     }
 
+    &__btn {
+        position: relative;
+        // overflow: hidden;
+        height: 35px;
+        // width: 35px;
+        border: none;
+        background-color: transparent;
 
 
-    &__title {
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            height: 15px;
+            width: 2px;
+            background-color: $ac;
+            transition: transform 1s;
+            z-index: 999;
+        }
+
+        &::before {
+            transform: rotate(270deg);
+        }
+
+        &::after {
+            transform: rotate(180deg);
+        }
+
+
+
+    }
+
+    .accordion__item.active:before {
+        transform: rotate(500deg);
+    }
+
+    .accordion__item.active::after {
+        transform: rotate(400deg);
+    }
+
+
+    // li {
+    //     color: red;
+    //     /* Цвет маркеров */
+    // }
+
+    // li span {
+    //     color: green;
+    //     /* Цвет текста */
+    // }
+
+    &__item {
+
+        position: relative;
+        padding-left: 10px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 9px;
+            left: 0px;
+
+            height: 5px;
+            width: 5px;
+            border-radius: 50%;
+            background-color: $ac;
+
+        }
+    }
+
+    // &__item span {
+    //     color: $white;
+    // }
+
+    &__wrappers {
+        margin-bottom: 30px;
+    }
+
+    &__subtitle {
         text-transform: uppercase;
         font-weight: 700;
         display: block;
@@ -986,10 +1092,53 @@
 
 
 
+    &__title {
+        text-transform: uppercase;
+        font-weight: 700;
+        display: block;
+        margin-bottom: 5px;
+    }
 }
 
 
+// .trainer-list__content.slide {
+//     height: 800px;
+//     overflow-y: scroll;
+// }
 
+::-webkit-scrollbar {
+    /* 1 - скроллбар */
+    width: 10px;
+    height: 4px;
+    background-color: #000;
+}
+
+// ::-webkit-scrollbar-button {
+//     /* 2 - кнопка */
+
+// }
+
+// ::-webkit-scrollbar-track {
+//     /* 3 - трек */
+// }
+
+// ::-webkit-scrollbar-track-piece {
+//     /* 4 - видимая часть трека */
+// }
+
+::-webkit-scrollbar-thumb {
+    /* 5 - ползунок */
+    border-radius: 2px;
+    background-color: #fee301;
+}
+
+// ::-webkit-scrollbar-corner {
+//     /* 6 - уголок */
+// }
+
+// ::-webkit-resizer {
+//     /* 7 - изменение размеров */
+// }
 
 
 
