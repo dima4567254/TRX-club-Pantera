@@ -1,47 +1,32 @@
-<svg id="_inst_ic" xmlns="http://www.w3.org/2000/svg" width="38" height="35.28" viewBox="0 0 38 35.28">
-  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
-   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-      <rdf:Description rdf:about=""/>
-   </rdf:RDF>
-</x:xmpmeta>
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                           
-<?xpacket end="w"?></metadata>
-<defs>
-    <style>
-      .cls-1 {
-        fill: #202020;
-      }
+<svg id="_inst_ic" xmlns="http://www.w3.org/2000/svg" width="38" height="35.28"
+    viewBox="0 0 38 35.28">
+    <!-- <metadata>
+        <x:xmpmeta xmlns:x="adobe:ns:meta/"
+            x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+            <rdf:rdf xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                <rdf:description rdf:about=""></rdf:description>
+            </rdf:rdf>
+        </x:xmpmeta>
+    </metadata>-->
+    <!-- <defs>
+        <style>
+            .cls-1 {
+            fill: #202020;
+            }
 
-      .cls-1, .cls-2 {
-        fill-rule: evenodd;
-      }
+            .cls-1,
+            .cls-2 {
+            fill-rule: evenodd;
+            }
 
-      .cls-2 {
-        fill: #fee301;
-      }
-    </style>
-  </defs>
-  <path id="Прямокутник_16_копія" data-name="Прямокутник 16 копія" class="cls-1" d="M842,6477.9h38v35.29H842V6477.9Z" transform="translate(-842 -6477.91)"/>
-  <path id="Forma_1" data-name="Forma 1" class="cls-2" d="M867.114,6483.66H854.886a6.238,6.238,0,0,0-6.225,6.23v12.23a6.23,6.23,0,0,0,6.225,6.22h12.228a6.229,6.229,0,0,0,6.225-6.22v-12.23A6.238,6.238,0,0,0,867.114,6483.66Zm3.539,18.46a3.545,3.545,0,0,1-3.539,3.54H854.886a3.545,3.545,0,0,1-3.539-3.54v-12.23a3.545,3.545,0,0,1,3.539-3.54h12.228a3.545,3.545,0,0,1,3.539,3.54v12.23Zm-3.093-11.16a1.505,1.505,0,1,1,1.5-1.5,1.5,1.5,0,0,1-1.5,1.5h0Zm-6.56-1.31a6.355,6.355,0,1,0,6.355,6.35A6.362,6.362,0,0,0,861,6489.65Zm0,10.02a3.67,3.67,0,1,1,3.67-3.67A3.67,3.67,0,0,1,861,6499.67Z" transform="translate(-842 -6477.91)"/>
+            .cls-2 {
+            fill: #fee301;
+            }
+        </style>
+    </defs>  -->
+    <!-- <path id="Прямокутник_16_копія" data-name="Прямокутник 16 копія" class="cls-1"
+        d="M842,6477.9h38v35.29H842V6477.9Z" transform="translate(-842 -6477.91)"></path> -->
+    <path id="Forma_1" data-name="Forma 1" class="cls-2"
+        d="M867.114,6483.66H854.886a6.238,6.238,0,0,0-6.225,6.23v12.23a6.23,6.23,0,0,0,6.225,6.22h12.228a6.229,6.229,0,0,0,6.225-6.22v-12.23A6.238,6.238,0,0,0,867.114,6483.66Zm3.539,18.46a3.545,3.545,0,0,1-3.539,3.54H854.886a3.545,3.545,0,0,1-3.539-3.54v-12.23a3.545,3.545,0,0,1,3.539-3.54h12.228a3.545,3.545,0,0,1,3.539,3.54v12.23Zm-3.093-11.16a1.505,1.505,0,1,1,1.5-1.5,1.5,1.5,0,0,1-1.5,1.5h0Zm-6.56-1.31a6.355,6.355,0,1,0,6.355,6.35A6.362,6.362,0,0,0,861,6489.65Zm0,10.02a3.67,3.67,0,1,1,3.67-3.67A3.67,3.67,0,0,1,861,6499.67Z"
+        transform="translate(-842 -6477.91)"></path>
 </svg>

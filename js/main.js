@@ -158,8 +158,25 @@ $('.slider-coaches').slick({
     slidesToShow: 2,
     slidesToScroll: 1,
     arrows: true,
-     prevArrow: '<div class="prev"></div>',
-        nextArrow: '<div class="next"></div>',
+    prevArrow: '<div class="prev"></div>',
+    nextArrow: '<div class="next"></div>',
+    // fade: true,
+    // variableWidth: true,
+
+    // asNavFor: '.gallery-slider__items',
+});
+
+$('.slider-blog').slick({
+    // dots: false,
+    // arrows: false,
+    // centeredSlides: true,
+    // autoplaySpeed: 2000,
+    // autoplay: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow: '<div class="prev-blog"></div>',
+    nextArrow: '<div class="next-blog"></div>',
     // fade: true,
     // variableWidth: true,
 

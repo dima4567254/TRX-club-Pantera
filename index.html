@@ -22,7 +22,13 @@
 <!-- accordion li b ul пустые но похоже на список -->
 <!-- возможно нужно переназвать секции где родитель только с двумя элементами -->
 <!-- в галерее черная рамка -->
-<!-- 1523 coaches нужно ли подписывать пустой спан без текста -->
+<!-- 1523 coaches нужно ли подписывать пустой спан без текста 
+    да и подписать все иконки
+  <--  проверить работает ли фишка с прижатым футером-->
+<!-- вопрос: стоит ли делать выравнивание блога -->
+<!-- блог не заполнял -->
+<!-- проверить все бем блоки и вынести отдельно флексы и отступы -->
+
 
 <body>
     <header class="header">
@@ -45,7 +51,7 @@
                     </a>
                 </div>
                 <div class="header__left">
-                    <ul class="contacts">
+                    <ul class="header__contacts contacts">
                         <li class="contacts__text">
                             <span class="contacts__info">Графік роботи:</span>
                             <div class="contacts__wrapper">
@@ -170,15 +176,11 @@
                 </h2>
                 <ul class="services__items">
                     <li class="services__item">
-
-                        <!-- <div class=""> -->
                         <svg class="services__svg" width="55px" height="52px">
                             <use xlink:href="images/sprite.svg#trx_zal">
                             </use>
                         </svg>
                         Сучасний та просторий зал в центрі міста
-                        <!-- </div> -->
-
                     </li>
                     <li class="services__item">
                         <svg class="services__svg" width="55px" height="52px">
@@ -1532,7 +1534,9 @@
                                     <h3 class="slider-coaches__title">
                                         Людмила Олексюк фітнес тренер
                                     </h3>
-                                    <span class="slider-coaches__symbol"></span>
+                                    <span class="slider-coaches__symbol">
+                                        <span class="sr-only">анімований значок плюс</span>
+                                    </span>
                                     <ul class="slider-coaches__list">
                                         <li class="slider-coaches__items">
                                             <div class="slider-coaches__subtitle">Освіта:</div>
@@ -1671,7 +1675,12 @@
                                     <h3 class="slider-coaches__title">
                                         Дмитро Сідоров фітнес тренер
                                     </h3>
-                                    <span class="slider-coaches__symbol"></span>
+                                    <span class="slider-coaches__symbol">
+                                        <span class="sr-only">
+                                            анімований значок
+                                            плюс
+                                        </span>
+                                    </span>
                                     <ul class="slider-coaches__list">
                                         <li class="slider-coaches__items">
                                             <div class="slider-coaches__subtitle">Освіта:</div>
@@ -1682,7 +1691,6 @@
                                             <ul class="">
                                                 <li class="slider-coaches__item">
                                                     «Сакральна архітектура тіла» (2011, 2012)
-
                                                     Пройшла Сертифікацію:
                                                 <li class="slider-coaches__item"> «Дієтологія. Алгоритм складення
                                                     программ
@@ -1811,19 +1819,21 @@
                                     <h3 class="slider-coaches__title">
                                         Попова Алла фітнес тренер
                                     </h3>
-                                    <span class="slider-coaches__symbol"></span>
+                                    <span class="slider-coaches__symbol">
+                                        <span class="sr-only">
+                                            анімований значок плюс
+                                        </span>
+                                    </span>
                                     <ul class="slider-coaches__list">
                                         <li class="slider-coaches__items">
                                             <div class="slider-coaches__subtitle">Освіта:</div>
                                             <div class="slider-coaches__item">Вища педагогічна</div>
                                         </li>
-
                                         <li class="slider-coaches__items">
                                             <div class="slider-coaches__subtitle">Пройшла Сертифікацію:</div>
                                             <ul class="">
                                                 <li class="slider-coaches__item">
                                                     «Сакральна архітектура тіла» (2011, 2012)
-
                                                     Пройшла Сертифікацію:
                                                 <li class="slider-coaches__item"> «Дієтологія. Алгоритм складення
                                                     программ
@@ -1952,7 +1962,11 @@
                                     <h3 class="slider-coaches__title">
                                         Пінчук Надія фітнес тренер
                                     </h3>
-                                    <span class="slider-coaches__symbol"></span>
+                                    <span class="slider-coaches__symbol">
+                                        <span class="sr-only">
+                                            анімований значок плюс
+                                        </span>
+                                    </span>
                                     <ul class="slider-coaches__list">
                                         <li class="slider-coaches__items">
                                             <div class="slider-coaches__subtitle">Освіта:</div>
@@ -2088,92 +2102,256 @@
             </div>
         </section>
 
-        <section class="blog">
+        <section class="blog section section--bem">
             <div class="container">
-                <h2 class="blog__title">
+                <h2 class="blog__title title title--bem">
                     новини та акції
                 </h2>
-                <div class="swiper-blog">
-                    <!-- <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div> -->
-                    <div class="swiper-wrapper">
-                        <div class="slider-slide">
-                            <div class="slider-slide__item">
-                                <img class="slider-slide__img" src="images/"
+                <ul class="slider-blog">
+                    <li class="slider-blog__item">
+                        <div class="slider-blog__images">
+                            <a class="slider-blog__link slider-blog__link--img" href="#">
+                                <img class="slider-blog__img" src="images/blog/1-300x300.jpg"
                                     alt="Правила відвідування TRX-club PANTERA">
-                                <h3 class="slider-slide__title">
-                                    Правила відвідування TRX-club PANTERA
-                                </h3>
-                                <a class="slider-slide__link" href="#">Детальніше</a>
-                            </div>
+                            </a>
                         </div>
-                        <div class="swiper-slide">
-                            content2
-                        </div>
-                        <div class="swiper-slide">
-                            content3
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        <h3 class="slider-blog__title">
+                            Правила відвідування TRX-club PANTERA
+                        </h3>
+                        <a class="slider-blog__link" href="#">Детальніше</a>
+                    </li>
+                    <li class="slider-blog__item">
+                        <a class="slider-blog__link slider-blog__link--img" href="#">
+                            <img class="slider-blog__img" src="images/blog/2-550x290.jpg"
+                                alt="Правила відвідування TRX-club PANTERA">
+                        </a>
+                        <h3 class="slider-blog__title">
+                            Правила відвідування TRX-club PANTERA
+                        </h3>
+                        <a class="slider-blog__link" href="#">Детальніше</a>
+                    </li>
+                    <li class="slider-blog__item">
+                        <a class="slider-blog__link-ing slider-blog__link--img" href="#">
+                            <img class="slider-blog__img" src="images/blog/3.jpg"
+                                alt="Правила відвідування TRX-club PANTERA">
+                        </a>
+                        <h3 class="slider-blog__title">
+                            Правила відвідування TRX-club PANTERA
+                        </h3>
+                        <a class="slider-blog__link" href="#">Детальніше</a>
+                    </li>
+                    <li class="slider-blog__item">
+                        <a class="slider-blog__link slider-blog__link--img" href="#">
+                            <img class="slider-blog__img" src="images/blog/1-300x300.jpg"
+                                alt="Правила відвідування TRX-club PANTERA">
+                        </a>
+                        <h3 class="slider-blog__title">
+                            Правила відвідування TRX-club PANTERA
+                        </h3>
+                        <a class="slider-blog__link" href="#">Детальніше</a>
+                    </li>
+                    <li class="slider-blog__item">
+                        <a class="slider-blog__link slider-blog__link--img" href="#">
+                            <img class="slider-blog__img" src="images/blog/2-550x290.jpg"
+                                alt="Правила відвідування TRX-club PANTERA">
+                        </a>
+                        <h3 class="slider-blog__title">
+                            Правила відвідування TRX-club PANTERA
+                        </h3>
+                        <a class="slider-blog__link" href="#">Детальніше</a>
+                    </li>
+                    <li class="slider-blog__item">
+                        <a class="slider-blog__link slider-blog__link--img" href="#">
+                            <img class="slider-blog__img" src="images/blog/3.jpg"
+                                alt="Правила відвідування TRX-club PANTERA">
+                        </a>
+                        <h3 class="slider-blog__title">
+                            Правила відвідування TRX-club PANTERA
+                        </h3>
+                        <a class="slider-blog__link" href="#">Детальніше</a>
+                    </li>
+                    <li class="slider-blog__item">
+                        <a class="slider-blog__link slider-blog__link--img" href="#">
+                            <img class="slider-blog__img" src="images/blog/1-300x300.jpg"
+                                alt="Правила відвідування TRX-club PANTERA">
+                        </a>
+                        <h3 class="slider-blog__title">
+                            Правила відвідування TRX-club PANTERA
+                        </h3>
+                        <a class="slider-blog__link" href="#">Детальніше</a>
+                    </li>
+                    <li class="slider-blog__item">
+                        <a class="slider-blog__link slider-blog__link--img" href="#">
+                            <img class="slider-blog__img" src="images/blog/2-550x290.jpg"
+                                alt="Правила відвідування TRX-club PANTERA">
+                        </a>
+                        <h3 class="slider-blog__title">
+                            Правила відвідування TRX-club PANTERA
+                        </h3>
+                        <a class="slider-blog__link" href="#">Детальніше</a>
+                    </li>
+                    <li class="slider-blog__item">
+                        <a class="slider-blog__link slider-blog__link--img" href="#">
+                            <img class="slider-blog__img" src="images/blog/3.jpg"
+                                alt="Правила відвідування TRX-club PANTERA">
+                        </a>
+                        <h3 class="slider-blog__title">
+                            Правила відвідування TRX-club PANTERA
+                        </h3>
+                        <a class="slider-blog__link" href="#">Детальніше</a>
+                    </li>
+                </ul>
         </section>
 
-        <div id="map" style="width: 100%; height: 500px;">
+        <div id="map" style="width: 100%; height: 500px; z-index: -999;">
         </div>
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <div class="footer__wrapper">
-                <a class="footer__logo logo" href="#">
-                    <img class="logo__menu" src="images/icons/logo.svg" alt="logo">
-                </a>
-                <div class="footer__inner">
-                    <div class="social">
-                        <svg class="social__svg" width="36px" height="36px">
+        <!-- <div class="container"> -->
+        <!-- <header class="header"> -->
+        <div class="footer__wrapper">
+            <!-- <div class="footer__right"> -->
+            <a class="logo footer__logo" href="#">
+                <img class="logo__img" src="images/logo.svg" alt="logo">
+            </a>
+            <!-- </div> -->
+            <div class="footer__left">
+                <div class="social">
+                    <a class="social__link" href="#">
+                        <svg class="social__svg" width="36px" height="36px" fill="#fee301">
+                            <!-- <path></path> -->
                             <use xlink:href="images/sprite.svg#facebook">
                             </use>
                         </svg>
-                        <svg class="social__svg" width="36px" height="36px">
+                    </a>
+                    <a class="social__link" href="#">
+                        <svg class="social__svg" width="36px" height="36px" fill="#fee301">
                             <use xlink:href="images/sprite.svg#instagram">
                             </use>
                         </svg>
-                    </div>
-                    <ul class="contacts">
-                        <li class="contacts__item">
-                            <svg class="contacts__svg" width="21px" height="21px">
-                                <use xlink:href="images/sprite.svg#clock">
-                                </use>
-                            </svg>
-                            Графік роботи:
-                            <p> Пн - Пт: 7.00 - 21.30</p>
-                            <p>Сб: 8.30 - 14.00</p>
-                        </li>
-                        <li class="contacts__item">
-                            <svg class="contacts__svg" width="17px" height="21px">
-                                <use xlink:href="images/sprite.svg#clock">
-                                </use>
-                            </svg>
-                            Наша адреса:
-                            <p>м. Житомир</p>
-                            <p>вул. Мала Бердичівська, 17</p>
-                        </li>
-                        <li class="contacts__item">
-                            <svg class="contacts__svg" width="21px" height="21px">
-                                <use xlink:href="images/sprite.svg#clock">
-                                </use>
-                            </svg>
-                            Консультації по всім питанням
-                            <button class="contacts__btn" type="button">
-                                <span></span>
-                                <span class="sr-only">Відкрити меню</span>
-                            </button>
-                            <a href="tel:+0989791919">(098) 979-19-19</a>
-                        </li>
-                    </ul>
+                    </a>
+                    <!-- <a class="social__link" href="#">
+                        <svg id="_fb_ic" xmlns="http://www.w3.org/2000/svg" width="38" height="35.28"
+                            viewBox="0 0 38 35.28">
+                            <!-- <metadata>
+                                <x:xmpmeta xmlns:x="adobe:ns:meta/"
+                                    x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                                    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                        <rdf:Description rdf:about="" />
+                                    </rdf:RDF>
+                                </x:xmpmeta>
+                            </metadata> -->
+                    <!-- <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: #202020;
+                                    }
+
+                                    .cls-1,
+                                    .cls-2 {
+                                        fill-rule: evenodd;
+                                    }
+
+                                    .cls-2 {
+                                        fill: #fee301;
+                                    }
+                                </style>
+                            </defs> 
+                            <path id="Прямокутник_16" data-name="Прямокутник 16" class="cls-1"
+                                d="M794,6477.9h38v35.29H794V6477.9Z" transform="translate(-794 -6477.91)" />
+                            <path id="Forma_1" data-name="Forma 1" class="cls-2"
+                                d="M809.73,6508.34h5.114v-12.35h3.431s0.322-1.99.479-4.17h-3.89v-2.84a1.206,1.206,0,0,1,1.109-.99h2.786v-4.33h-3.79c-5.365,0-5.239,4.16-5.239,4.78v3.4h-2.489v4.15h2.489v12.35h0Z"
+                                transform="translate(-794 -6477.91)" />
+                        </svg>
+                    </a>
+                    <a class="social__link" href="#">
+                        <svg id="_inst_ic" xmlns="http://www.w3.org/2000/svg" width="38" height="35.28"
+                            viewBox="0 0 38 35.28">
+                            <metadata>
+                                <x:xmpmeta xmlns:x="adobe:ns:meta/"
+                                    x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                                    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                        <rdf:Description rdf:about="" />
+                                    </rdf:RDF>
+                                </x:xmpmeta>
+                            </metadata>
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: #202020;
+                                    }
+
+                                    .cls-1,
+                                    .cls-2 {
+                                        fill-rule: evenodd;
+                                    }
+
+                                    .cls-2 {
+                                        fill: #fee301;
+                                    }
+                                </style>
+                            </defs>
+                            <path id="Прямокутник_16_копія" data-name="Прямокутник 16 копія" class="cls-1"
+                                d="M842,6477.9h38v35.29H842V6477.9Z" transform="translate(-842 -6477.91)" />
+                            <path id="Forma_1" data-name="Forma 1" class="cls-2"
+                                d="M867.114,6483.66H854.886a6.238,6.238,0,0,0-6.225,6.23v12.23a6.23,6.23,0,0,0,6.225,6.22h12.228a6.229,6.229,0,0,0,6.225-6.22v-12.23A6.238,6.238,0,0,0,867.114,6483.66Zm3.539,18.46a3.545,3.545,0,0,1-3.539,3.54H854.886a3.545,3.545,0,0,1-3.539-3.54v-12.23a3.545,3.545,0,0,1,3.539-3.54h12.228a3.545,3.545,0,0,1,3.539,3.54v12.23Zm-3.093-11.16a1.505,1.505,0,1,1,1.5-1.5,1.5,1.5,0,0,1-1.5,1.5h0Zm-6.56-1.31a6.355,6.355,0,1,0,6.355,6.35A6.362,6.362,0,0,0,861,6489.65Zm0,10.02a3.67,3.67,0,1,1,3.67-3.67A3.67,3.67,0,0,1,861,6499.67Z"
+                                transform="translate(-842 -6477.91)" />
+                        </svg>
+                    </a> 
+                    -->
                 </div>
+                <ul class="footer__contacts contacts">
+                    <li class="contacts__text">
+                        <span class="contacts__info">Графік роботи:</span>
+                        <div class="contacts__wrapper">
+                            <svg class="svg" width="21px" height="21px" fill="#fee301">
+                                <use xlink:href="images/sprite.svg#clock">
+                                </use>
+                            </svg>
+                            <div class="contacts__inner">
+                                <p><span>Пн-Пт</span>: 7.00 - 21.30</p>
+                                <p><span>Сб</span>: 8.30 - 14.00</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="contacts__text">
+                        <address class="contacts__address">
+                            <span class="contacts__info">Наша адреса:</span>
+                            <div class="contacts__wrapper">
+                                <svg class="svg" width="17px" height="21px" fill="#fee301">
+                                    <use xlink:href="images/sprite.svg#map">
+                                    </use>
+                                </svg>
+                                <div class="contacts__inner">
+                                    <span>м. Житомир</span>
+                                    <p>вул. Мала Бердичівська, 17</p>
+                                </div>
+                            </div>
+                        </address>
+                    </li>
+                    <li class="contacts__text">
+                        <span class="contacts__info">
+                            Консультації по всім питанням
+                        </span>
+                        <button class="contacts__btn" type="button">
+                            <span></span>
+                            <span class="sr-only">Відкрити меню</span>
+                        </button>
+                        <div class="contacts__wrapper">
+                            <svg class="svg" width="21px" height="21px" fill="#fee301">
+                                <use xlink:href="images/sprite.svg#tel">
+                                </use>
+                            </svg>
+                            <a class="contacts__link" href="tel:+0989791919">(098) 979-19-19</a>
+                        </div>
+                    </li>
+                </ul>
+
             </div>
         </div>
+        <!-- </header> -->
+        <!-- </div> -->
     </footer>
 
     <script
