@@ -32,6 +32,18 @@ body {
     min-height: 120px;
     padding-right: 20px;
 
+    @media (max-width: 1200px) {
+        justify-content: end;
+    }
+
+    @media (max-width: 768px) {
+        justify-content: center;
+    }
+
+    @media (max-width: 576px) {
+        padding-right: 0px;
+    }
+
     &::before {
         content: "";
         position: absolute;
@@ -153,6 +165,61 @@ body {
 @function min($numbers...) {
     @return m#{i}n(#{$numbers});
 }
+
+
+@keyframes hvr-buzz {
+    0% {
+        transform: translateY(0) rotate(-2deg)
+    }
+
+    30% {
+        transform: translateY(1px) rotate(5deg)
+    }
+
+    70% {
+        transform: translateY(-1px) rotate(-5deg)
+    }
+
+    100% {
+        transform: translateY(0) rotate(2deg)
+    }
+}
+
+@keyframes menu-menu {
+    0% {
+        // transform: translateY(0) rotate(-2deg)
+        // transform: translateX(-200%);
+        transform: translateX(0%);
+    }
+
+    30% {
+        // transform: translateY(1px) rotate(5deg)
+        // transform: translateX(-350%);
+        transform: translateX(10%);
+    }
+
+    // 70% {
+    //     // transform: translateY(-1px) rotate(-5deg)
+    //     transform: translateX(-200%);
+    // }
+
+    // 100% {
+    //     // transform: translateY(0) rotate(2deg)
+    //     // transform: translateX(0%);
+    // }
+}
+
+// .js-overlay {
+//     height: 100%;
+//     width: 100%;
+//     background-color: rgba(0, 0, 0, 0.7);
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     bottom: 0;
+//     right: 0;
+//     z-index: 5;
+// }
 
 // // !!!!!!
 // .slick-initialized .slick-slide {

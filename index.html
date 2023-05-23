@@ -32,116 +32,122 @@
 
 <body>
     <header class="header">
-        <div class="container">
-            <div class="header__wrapper">
-                <div class="header__right">
-                    <a class="header__link" href="#">
-                        <svg class="header__lk svg" width="16px" height="22px" fill="white">
-                            <use xlink:href="images/sprite.svg#lk">
-                            </use>
-                        </svg>
-                        <svg class="header__lock svg" width="16px" height="22px" fill="#fee301">
-                            <use xlink:href="images/sprite.svg#lock">
-                            </use>
-                        </svg>
-                        Особистий кабінет
-                    </a>
-                    <a class="logo menu__logo" href="#">
-                        <img class="logo__img" src="images/logo.svg" alt="logo">
-                    </a>
-                </div>
-                <div class="header__left">
-                    <ul class="header__contacts contacts">
-                        <li class="contacts__text">
-                            <span class="contacts__info">Графік роботи:</span>
+        <!-- <div class="container"> -->
+        <div class="header__wrapper">
+            <div class="header__right">
+                <a class="header__link" href="#">
+                    <svg class="header__lk svg" width="16px" height="22px" fill="white">
+                        <use xlink:href="images/sprite.svg#lk">
+                        </use>
+                    </svg>
+                    <svg class="header__lock svg" width="16px" height="22px" fill="#fee301">
+                        <use xlink:href="images/sprite.svg#lock">
+                        </use>
+                    </svg>
+                    Особистий кабінет
+                </a>
+                <a class="logo header__logo" href="#">
+                    <img class="logo__img" src="images/logo.svg" alt="logo">
+                </a>
+            </div>
+            <div class="header__left">
+                <ul class="header__contacts contacts">
+                    <li class="contacts__item">
+                        <span class="contacts__info">Графік роботи:</span>
+                        <div class="contacts__wrapper">
+                            <svg class="contacts__svg svg" width="21px" height="21px" fill="#fee301">
+                                <use xlink:href="images/sprite.svg#clock">
+                                </use>
+                            </svg>
+                            <div class="contacts__text">
+                                <p><span>Пн-Пт</span>: 7.00 - 21.30</p>
+                                <p><span>Сб</span>: 8.30 - 14.00</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="contacts__item">
+                        <address class="contacts__address">
+                            <span class="contacts__info">Наша адреса:</span>
                             <div class="contacts__wrapper">
-                                <svg class="svg" width="21px" height="21px" fill="#fee301">
-                                    <use xlink:href="images/sprite.svg#clock">
+                                <svg class="contacts__svg svg" width="21px" height="21px" fill="#fee301">
+                                    <use xlink:href="images/sprite.svg#map">
                                     </use>
                                 </svg>
-                                <div class="contacts__inner">
-                                    <p><span>Пн-Пт</span>: 7.00 - 21.30</p>
-                                    <p><span>Сб</span>: 8.30 - 14.00</p>
+                                <div class="contacts__text">
+                                    <span>м. Житомир</span>
+                                    <p>вул. Мала Бердичівська, 17</p>
                                 </div>
                             </div>
-                        </li>
-                        <li class="contacts__text">
-                            <address class="contacts__address">
-                                <span class="contacts__info">Наша адреса:</span>
-                                <div class="contacts__wrapper">
-                                    <svg class="svg" width="17px" height="21px" fill="#fee301">
-                                        <use xlink:href="images/sprite.svg#map">
-                                        </use>
-                                    </svg>
-                                    <div class="contacts__inner">
-                                        <span>м. Житомир</span>
-                                        <p>вул. Мала Бердичівська, 17</p>
-                                    </div>
-                                </div>
-                            </address>
-                        </li>
-                        <li class="contacts__text">
-                            <span class="contacts__info">
-                                Консультації по всім питанням
-                            </span>
-                            <button class="contacts__btn" type="button">
-                                <span></span>
-                                <span class="sr-only">Відкрити меню</span>
-                            </button>
-                            <div class="contacts__wrapper">
-                                <svg class="svg" width="21px" height="21px" fill="#fee301">
-                                    <use xlink:href="images/sprite.svg#tel">
-                                    </use>
-                                </svg>
+                        </address>
+                    </li>
+                    <li class="contacts__item contacts__item--consultations">
+                        <span class="contacts__info">
+                            Консультації по всім питанням
+                        </span>
+                        <div class="contacts__wrapper contacts__wrapper--consultations">
+                            <svg class="contacts__svg svg" width="21px" height="21px" fill="#fee301">
+                                <use xlink:href="images/sprite.svg#tel">
+                                </use>
+                            </svg>
+                            <div class="contacts__text">
                                 <a class="contacts__link" href="tel:+0989791919">(098) 979-19-19</a>
                             </div>
+                        </div>
+                    </li>
+                </ul>
+                <nav class="menu">
+                    <div class="menu__box">
+                        <button class="menu__btn" type="button">
+                            <span></span>
+                            <span class="sr-only">Відкрити меню</span>
+                        </button>
+                    </div>
+                    <ul class="menu__items">
+                        <li class="menu__item">
+                            <a class="menu__link menu__link--active" href="#">
+                                Головна
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#service">
+                                Наші переваги
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#collections">
+                                Галерея
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#products">
+                                Ціни
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#about">
+                                Розклад
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#blog">
+                                Новини
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#blog">
+                                Контакти
+                            </a>
                         </li>
                     </ul>
-                    <nav class="menu">
-                        <ul class="menu__items">
-                            <li class="menu__item">
-                                <a class="menu__link menu__link--active" href="#">
-                                    Головна
-                                </a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__link" href="#service">
-                                    Наші переваги
-                                </a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__link" href="#collections">
-                                    Галерея
-                                </a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__link" href="#products">
-                                    Ціни
-                                </a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__link" href="#about">
-                                    Розклад
-                                </a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__link" href="#blog">
-                                    Новини
-                                </a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__link" href="#blog">
-                                    Контакти
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+                </nav>
             </div>
         </div>
+        <!-- </div> -->
     </header>
 
-    <main class="main">
+    <!-- <div class="js-overlay"></div> -->
+
+    <!-- <main class="main">
         <section class="intro">
             <div class="container">
                 <h1 class="intro__title">
@@ -570,7 +576,7 @@
                                     <path style="fill:#ffe301;"
                                         d="M 9.0,0.0 L 0.0,9.0 0.0,10.0 2.0,12.0 3.0,12.0 C 5.2057,9.7481 7.1933,7.5763 9.0,5.0 L 10.0,5.0 C 11.8066,7.5763 13.7943,9.7481 16.0,12.0 L 17.0,12.0 19.0,10.0 19.0,9.0 C 15.7944,5.7962 12.7073,2.6112 9.0,0.0 Z" />
                                 </g>
-                            </svg> -->
+                            </svg> --
                             <svg class="rates__svg" width="19px" height="12px" fill="#bcbcbc">
                                 <use xlink:href="images/sprite.svg#price_arrow">
                                 </use>
@@ -1659,7 +1665,7 @@
                                             <div class="title">Фітнес форуми:</div>
                                             <div class="title">Досвід роботи:</div>
                                             <p>12 років</p> -->
-                                            <!-- ----------------------- -->
+    <!-- ----------------------- --
                                         </li>
                                     </ul>
                                 </div>
@@ -1803,7 +1809,7 @@
                                             <div class="title">Фітнес форуми:</div>
                                             <div class="title">Досвід роботи:</div>
                                             <p>12 років</p> -->
-                                            <!-- ----------------------- -->
+    <!-- ----------------------- --
                                         </li>
                                     </ul>
                                 </div>
@@ -1946,7 +1952,7 @@
                                             <div class="title">Фітнес форуми:</div>
                                             <div class="title">Досвід роботи:</div>
                                             <p>12 років</p> -->
-                                            <!-- ----------------------- -->
+    <!-- ----------------------- --
                                         </li>
                                     </ul>
                                 </div>
@@ -2089,7 +2095,7 @@
                                             <div class="title">Фітнес форуми:</div>
                                             <div class="title">Досвід роботи:</div>
                                             <p>12 років</p> -->
-                                            <!-- ----------------------- -->
+    <!-- ----------------------- --
                                         </li>
                                     </ul>
                                 </div>
@@ -2109,19 +2115,17 @@
                 </h2>
                 <ul class="slider-blog">
                     <li class="slider-blog__item">
-                        <div class="slider-blog__images">
-                            <a class="slider-blog__link slider-blog__link--img" href="#">
+                            <a class="slider-blog__link" href="#">
                                 <img class="slider-blog__img" src="images/blog/1-300x300.jpg"
                                     alt="Правила відвідування TRX-club PANTERA">
                             </a>
-                        </div>
                         <h3 class="slider-blog__title">
                             Правила відвідування TRX-club PANTERA
                         </h3>
                         <a class="slider-blog__link" href="#">Детальніше</a>
                     </li>
                     <li class="slider-blog__item">
-                        <a class="slider-blog__link slider-blog__link--img" href="#">
+                        <a class="slider-blog__link" href="#">
                             <img class="slider-blog__img" src="images/blog/2-550x290.jpg"
                                 alt="Правила відвідування TRX-club PANTERA">
                         </a>
@@ -2131,7 +2135,7 @@
                         <a class="slider-blog__link" href="#">Детальніше</a>
                     </li>
                     <li class="slider-blog__item">
-                        <a class="slider-blog__link-ing slider-blog__link--img" href="#">
+                        <a class="slider-blog__link" href="#">
                             <img class="slider-blog__img" src="images/blog/3.jpg"
                                 alt="Правила відвідування TRX-club PANTERA">
                         </a>
@@ -2141,7 +2145,7 @@
                         <a class="slider-blog__link" href="#">Детальніше</a>
                     </li>
                     <li class="slider-blog__item">
-                        <a class="slider-blog__link slider-blog__link--img" href="#">
+                        <a class="slider-blog__link" href="#">
                             <img class="slider-blog__img" src="images/blog/1-300x300.jpg"
                                 alt="Правила відвідування TRX-club PANTERA">
                         </a>
@@ -2151,7 +2155,7 @@
                         <a class="slider-blog__link" href="#">Детальніше</a>
                     </li>
                     <li class="slider-blog__item">
-                        <a class="slider-blog__link slider-blog__link--img" href="#">
+                        <a class="slider-blog__link" href="#">
                             <img class="slider-blog__img" src="images/blog/2-550x290.jpg"
                                 alt="Правила відвідування TRX-club PANTERA">
                         </a>
@@ -2161,7 +2165,7 @@
                         <a class="slider-blog__link" href="#">Детальніше</a>
                     </li>
                     <li class="slider-blog__item">
-                        <a class="slider-blog__link slider-blog__link--img" href="#">
+                        <a class="slider-blog__link" href="#">
                             <img class="slider-blog__img" src="images/blog/3.jpg"
                                 alt="Правила відвідування TRX-club PANTERA">
                         </a>
@@ -2171,7 +2175,7 @@
                         <a class="slider-blog__link" href="#">Детальніше</a>
                     </li>
                     <li class="slider-blog__item">
-                        <a class="slider-blog__link slider-blog__link--img" href="#">
+                        <a class="slider-blog__link" href="#">
                             <img class="slider-blog__img" src="images/blog/1-300x300.jpg"
                                 alt="Правила відвідування TRX-club PANTERA">
                         </a>
@@ -2181,7 +2185,7 @@
                         <a class="slider-blog__link" href="#">Детальніше</a>
                     </li>
                     <li class="slider-blog__item">
-                        <a class="slider-blog__link slider-blog__link--img" href="#">
+                        <a class="slider-blog__link" href="#">
                             <img class="slider-blog__img" src="images/blog/2-550x290.jpg"
                                 alt="Правила відвідування TRX-club PANTERA">
                         </a>
@@ -2191,7 +2195,7 @@
                         <a class="slider-blog__link" href="#">Детальніше</a>
                     </li>
                     <li class="slider-blog__item">
-                        <a class="slider-blog__link slider-blog__link--img" href="#">
+                        <a class="slider-blog__link" href="#">
                             <img class="slider-blog__img" src="images/blog/3.jpg"
                                 alt="Правила відвідування TRX-club PANTERA">
                         </a>
@@ -2209,18 +2213,17 @@
 
     <footer class="footer">
         <!-- <div class="container"> -->
-        <!-- <header class="header"> -->
+    <!-- <header class="header"> --
         <div class="footer__wrapper">
-            <!-- <div class="footer__right"> -->
+            <!-- <div class="footer__right"> --
             <a class="logo footer__logo" href="#">
                 <img class="logo__img" src="images/logo.svg" alt="logo">
             </a>
-            <!-- </div> -->
+            <!-- </div> --
             <div class="footer__left">
                 <div class="social">
                     <a class="social__link" href="#">
                         <svg class="social__svg" width="36px" height="36px" fill="#fee301">
-                            <!-- <path></path> -->
                             <use xlink:href="images/sprite.svg#facebook">
                             </use>
                         </svg>
@@ -2231,91 +2234,22 @@
                             </use>
                         </svg>
                     </a>
-                    <!-- <a class="social__link" href="#">
-                        <svg id="_fb_ic" xmlns="http://www.w3.org/2000/svg" width="38" height="35.28"
-                            viewBox="0 0 38 35.28">
-                            <!-- <metadata>
-                                <x:xmpmeta xmlns:x="adobe:ns:meta/"
-                                    x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
-                                    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                                        <rdf:Description rdf:about="" />
-                                    </rdf:RDF>
-                                </x:xmpmeta>
-                            </metadata> -->
-                    <!-- <defs>
-                                <style>
-                                    .cls-1 {
-                                        fill: #202020;
-                                    }
-
-                                    .cls-1,
-                                    .cls-2 {
-                                        fill-rule: evenodd;
-                                    }
-
-                                    .cls-2 {
-                                        fill: #fee301;
-                                    }
-                                </style>
-                            </defs> 
-                            <path id="Прямокутник_16" data-name="Прямокутник 16" class="cls-1"
-                                d="M794,6477.9h38v35.29H794V6477.9Z" transform="translate(-794 -6477.91)" />
-                            <path id="Forma_1" data-name="Forma 1" class="cls-2"
-                                d="M809.73,6508.34h5.114v-12.35h3.431s0.322-1.99.479-4.17h-3.89v-2.84a1.206,1.206,0,0,1,1.109-.99h2.786v-4.33h-3.79c-5.365,0-5.239,4.16-5.239,4.78v3.4h-2.489v4.15h2.489v12.35h0Z"
-                                transform="translate(-794 -6477.91)" />
-                        </svg>
-                    </a>
-                    <a class="social__link" href="#">
-                        <svg id="_inst_ic" xmlns="http://www.w3.org/2000/svg" width="38" height="35.28"
-                            viewBox="0 0 38 35.28">
-                            <metadata>
-                                <x:xmpmeta xmlns:x="adobe:ns:meta/"
-                                    x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
-                                    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                                        <rdf:Description rdf:about="" />
-                                    </rdf:RDF>
-                                </x:xmpmeta>
-                            </metadata>
-                            <defs>
-                                <style>
-                                    .cls-1 {
-                                        fill: #202020;
-                                    }
-
-                                    .cls-1,
-                                    .cls-2 {
-                                        fill-rule: evenodd;
-                                    }
-
-                                    .cls-2 {
-                                        fill: #fee301;
-                                    }
-                                </style>
-                            </defs>
-                            <path id="Прямокутник_16_копія" data-name="Прямокутник 16 копія" class="cls-1"
-                                d="M842,6477.9h38v35.29H842V6477.9Z" transform="translate(-842 -6477.91)" />
-                            <path id="Forma_1" data-name="Forma 1" class="cls-2"
-                                d="M867.114,6483.66H854.886a6.238,6.238,0,0,0-6.225,6.23v12.23a6.23,6.23,0,0,0,6.225,6.22h12.228a6.229,6.229,0,0,0,6.225-6.22v-12.23A6.238,6.238,0,0,0,867.114,6483.66Zm3.539,18.46a3.545,3.545,0,0,1-3.539,3.54H854.886a3.545,3.545,0,0,1-3.539-3.54v-12.23a3.545,3.545,0,0,1,3.539-3.54h12.228a3.545,3.545,0,0,1,3.539,3.54v12.23Zm-3.093-11.16a1.505,1.505,0,1,1,1.5-1.5,1.5,1.5,0,0,1-1.5,1.5h0Zm-6.56-1.31a6.355,6.355,0,1,0,6.355,6.35A6.362,6.362,0,0,0,861,6489.65Zm0,10.02a3.67,3.67,0,1,1,3.67-3.67A3.67,3.67,0,0,1,861,6499.67Z"
-                                transform="translate(-842 -6477.91)" />
-                        </svg>
-                    </a> 
-                    -->
                 </div>
                 <ul class="footer__contacts contacts">
-                    <li class="contacts__text">
+                    <li class="contacts__item">
                         <span class="contacts__info">Графік роботи:</span>
                         <div class="contacts__wrapper">
                             <svg class="svg" width="21px" height="21px" fill="#fee301">
                                 <use xlink:href="images/sprite.svg#clock">
                                 </use>
                             </svg>
-                            <div class="contacts__inner">
+                            <div class="contacts__text">
                                 <p><span>Пн-Пт</span>: 7.00 - 21.30</p>
                                 <p><span>Сб</span>: 8.30 - 14.00</p>
                             </div>
                         </div>
                     </li>
-                    <li class="contacts__text">
+                    <li class="contacts__item">
                         <address class="contacts__address">
                             <span class="contacts__info">Наша адреса:</span>
                             <div class="contacts__wrapper">
@@ -2323,14 +2257,14 @@
                                     <use xlink:href="images/sprite.svg#map">
                                     </use>
                                 </svg>
-                                <div class="contacts__inner">
+                                <div class="contacts__text">
                                     <span>м. Житомир</span>
                                     <p>вул. Мала Бердичівська, 17</p>
                                 </div>
                             </div>
                         </address>
                     </li>
-                    <li class="contacts__text">
+                    <li class="contacts__item">
                         <span class="contacts__info">
                             Консультації по всім питанням
                         </span>
@@ -2351,8 +2285,8 @@
             </div>
         </div>
         <!-- </header> -->
-        <!-- </div> -->
-    </footer>
+    <!-- </div> -->
+    </footer> -->
 
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6uL89ZLHyppDt11J6gJrW9iyfh1mIkXM&callback=initMap&libraries=&v=weekly"

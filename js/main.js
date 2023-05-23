@@ -1,3 +1,14 @@
+$('.menu__btn').on('click', function () {
+    $('.menu__items').toggleClass('menu__items--active');
+
+    /*$('.header__logo').toggleClass('menu__list--active');
+    $('.intro__btn').toggleClass('menu__list--active');*/
+});
+
+$('.menu__btn').on('click', function () {
+    $('.menu__btn').toggleClass('active');
+});
+
 // $('.rates__list')('click', function () {
 //     $('.rates__items').toggleClass('active');
 //     // для крестика и для меню и что бы закрывалось меню после выбора сcылки
