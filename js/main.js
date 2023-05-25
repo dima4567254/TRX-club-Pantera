@@ -59,20 +59,136 @@ $('.menu__btn').on('click', function () {
 // });
 
 
+
+
+// $(document).ready(function () {
+//     $(".accordion__item").click(function () {
+//         // $(this).toggleClass("accordion__start--active");
+//         $(this).next().toggleClass('accordion__item--active');
+//         $(this)('.accordion__item').toggleClass('accordion__item--active');
+//     });
+// });
+// $(document).ready(function () {
+//     $(".accordion__item").click(function () {
+//         $(this).toggleClass("accordion__item--active");
+//     });
+// });
+
+// jQuery(document).ready(function ($) {
+// $('.accordion__item').click(function (event) {
+// $('.accordion__wrapper').on('click', function () {
+//     $('.accordion__btn').toggleClass('accordion__btn--active');
+// });
+// });
+// let elements = document.getElementsByClassName("accordion__btn");
+// for (let i = 0; i < elements.length; i++) {/*прокручиваем в цикле все элементы*/
+//     elements[i].addEventListener('click', function () {  /*при клике на элемент
+//  */
+//         for (let i = 0; i < elements.length; i++) {
+//             elements[i].classList.remove('active'); /*удаляем у всех class active*/
+//         }
+//         this.classList.add('active');/*добавляем class active по которому кликнули */
+//     })
+// }
+
+
+
+
+// const btn = document.querySelector('.accordion__wrapper');
+
+// btn.addEventListener('click', () => {
+// let elements = document.getElementsByClassName(".accordion__item");
+//     for (let i = 0; i < elements.length; i++) {/*прокручиваем в цикле все элементы*/
+//         elements[i].addEventListener('click', function () {  /*при клике на элемент
+//  */
+//             for (let i = 0; i < elements.length; i++) {
+//                 elements[i].classList.remove('accordion__btn--active'); /*удаляем у всех class active*/
+//             }
+//             this.classList.add('accordion__btn--active');/*добавляем class active по которому кликнули */
+//         })
+//     }
+// });
+
 $('.accordion__wrapper').on('click', function () {
     $(this).next().toggleClass('accordion__text--active');
+    // $(this).toggleClass('accordion__wrapper--active');
     // $(this).toggleClass('questions__text--active');
-    $(this)('.accordion__wrapper').toggleClass('accordion__text--active');
+    // $(this)('.accordion__wrapper').toggleClass('accordion__wrapper--active');
     // $(this)('.accordion__btn').removeClass('active');
     // $(this)('.accordion__btn').add('active');
     // $('.accordion__btn').toggleClass('active');
 });
 
+// const btn = document.querySelector('.accordion__item');
+
+// btn.addEventListener('click', () => {
+
+
+// });
+
+// btn.onclick = names;
+
+// function names() {
+// let list = document.querySelectorAll('.accordion__item');
+
+// console.log('work');
+// list.forEach(item => {
+//     item.addEventListener('click', (e) => {
+//         list.forEach(el => { el.classList.remove('accordion__item--active'); });
+//         item.classList.add('accordion__item--active')
+//     })
+// })
+
+// $(document).ready(function () {
+// alert("1");
+
+// alert("2");
+// });
+// --------------------------------------------------------------------------
+// document.querySelectorAll('.accordion__wrapper').forEach((item) =>
+
+//         item.addEventListener('click', () => {
+//             const parent = item;
+//             // const parent = item.parentNode;
+
+//             if (parent.classList.contains('accordion__wrapper--active')) {
+//                 parent.classList.remove('accordion__wrapper--active');
+//             }
+//             else {
+//                 document
+//                     .querySelectorAll('.accordion__wrapper')
+//                     .forEach((child) => child.classList.remove('accordion__wrapper--active'))
+
+//                 parent.classList.toggle('accordion__wrapper--active');
+//                 // parent.classList.toggleClass('accordion__wrapper--active');
+//             }
+//         })
+//     )
+// ---------------------------------------------------------------------------------
+// }
+// $('.accordion__wrapper').on('click', function () {
+//     // $(this).next().remove('active');
+//     // $(this).toggleClass('questions__text--active');
+//     $(this).next()('.accordion__wrapper').add('accordion__wrapper--active');
+//     // $('.accordion__btn').toggleClass('active');
+// });
+
 $(document).ready(function () {
-    $(".accordion__item").click(function () {
-        $(this).toggleClass("accordion__item--active");
+    $(".accordion__wrapper").click(function () {
+        $(this).toggleClass("accordion__wrapper--active");
     });
 });
+// $(function name() {}
+
+// one.onclick = myClick;
+
+// const els = document.getElementsByClassName('all-managers-item');
+// const className = 'open';
+// for (let i in els) {
+//     els[i].onclick = function () {
+//         els[i].classList.contains(className) ? els[i].classList.remove(className) : els[i].classList.add(className)
+//     }
+// }
 
 $('.rates__inner').on('click', function (e) {
     e.preventDefault();

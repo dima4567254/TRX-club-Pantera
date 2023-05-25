@@ -930,32 +930,57 @@
     color: $de;
 
     &__item {
+        perspective: 0px;
+        overflow: hidden;
         // position: relative;
-        // perspective: 0px;
-        // overflow: hidden;
 
         // &::before,
         // &::after {
-        //     content: "";
-        //     position: absolute;
-        //     // top: 30px;
-        //     // right: 35px;
+        //     // content: "";
+        //     // position: absolute;
+        //     // // top: 30px;
+        //     // // right: 35px;
         //     height: 36px;
         //     width: 2px;
-        //     background-color: $ac;
-        //     transition: transform 1s;
+        //     // background-color: $ac;
+        //     // transition: transform 1s;
+        //     display: block;
+        //     content: '';
+        //     background-color: #fee301;
+        //     position: absolute;
+        //     top: 0;
+        //     left: 90%;
+        //     right: 0;
+        //     bottom: 0;
+        //     margin: auto;
 
         //     @media (max-width: 576px) {
         //         height: 18px;
-        //         top: 35%;
+        //         // top: 35%;
         //         // top: 17px;
         //         // right: 7%;
-        //         left: 95%;
+        //         // left: 95%;
         //         // transform: translateX(-50%);
         //     }
         // }
 
+        // &::before {
+        //     transform: rotate(270deg);
+        // }
 
+        // &::after {
+        //     transform: rotate(180deg);
+        // }
+
+        // &--active {
+        //     &:before {
+        //         transform: rotate(500deg);
+        //     }
+
+        //     &::after {
+        //         transform: rotate(400deg);
+        //     }
+        // }
     }
 
     // .accordion__item.active:before {
@@ -966,6 +991,112 @@
     //     transform: rotate(400deg);
     // }
 
+    // &__start {
+    //     position: relative;
+
+    //     &::before,
+    //     &::after {
+    //         // content: "";
+    //         // position: absolute;
+    //         // // top: 30px;
+    //         // // right: 35px;
+    //         height: 36px;
+    //         width: 2px;
+    //         // background-color: $ac;
+    //         // transition: transform 1s;
+    //         display: block;
+    //         content: '';
+    //         background-color: #fee301;
+    //         position: absolute;
+    //         top: 0;
+    //         left: 90%;
+    //         right: 0;
+    //         bottom: 0;
+    //         margin: auto;
+    //         // !!!! дабавить в техники
+
+    //         @media (max-width: 576px) {
+    //             height: 18px;
+    //             // top: 35%;
+    //             // top: 17px;
+    //             // right: 7%;
+    //             // left: 95%;
+    //             // transform: translateX(-50%);
+    //         }
+    //     }
+
+    //     &::before {
+    //         transform: rotate(270deg);
+    //     }
+
+    //     &::after {
+    //         transform: rotate(180deg);
+    //     }
+
+    //     &--active {
+    //         &:before {
+    //             transform: rotate(500deg);
+    //         }
+
+    //         &::after {
+    //             transform: rotate(400deg);
+    //         }
+    //     }
+    // }
+
+    // &__btn {
+    //     position: relative;
+
+    //     &::before,
+    //     &::after {
+    //         // content: "";
+    //         // position: absolute;
+    //         // // top: 30px;
+    //         // // right: 35px;
+    //         height: 36px;
+    //         width: 2px;
+    //         // background-color: $ac;
+    //         // transition: transform 1s;
+    //         display: block;
+    //         content: '';
+    //         background-color: #fee301;
+    //         position: absolute;
+    //         top: 0;
+    //         left: 90%;
+    //         right: 0;
+    //         bottom: 0;
+    //         margin: auto;
+    //         // !!!! дабавить в техники
+
+    //         @media (max-width: 576px) {
+    //             height: 18px;
+    //             // top: 35%;
+    //             // top: 17px;
+    //             // right: 7%;
+    //             // left: 95%;
+    //             // transform: translateX(-50%);
+    //         }
+    //     }
+
+    //     &::before {
+    //         transform: rotate(270deg);
+    //     }
+
+    //     &::after {
+    //         transform: rotate(180deg);
+    //     }
+
+    //     &--active {
+    //         &:before {
+    //             transform: rotate(500deg);
+    //         }
+
+    //         &::after {
+    //             transform: rotate(400deg);
+    //         }
+    //     }
+    // }
+
     &__wrapper {
         display: flex;
         justify-content: space-between;
@@ -973,36 +1104,44 @@
         margin-bottom: 5px;
         cursor: pointer;
         position: relative;
-        // perspective: 0px;
-        // overflow: hidden;
 
         &::before,
         &::after {
-            content: "";
-            position: absolute;
-            // top: 30px;
-            // right: 35px;
+            // content: "";
+            // position: absolute;
+            // // top: 30px;
+            // // right: 35px;
             height: 36px;
             width: 2px;
-            background-color: $ac;
-            transition: transform 1s;
+            // background-color: $ac;
+            // transition: transform 1s;
+            display: block;
+            content: '';
+            background-color: #fee301;
+            position: absolute;
+            top: 0;
+            left: 90%;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            // !!!! дабавить в техники
 
             @media (max-width: 576px) {
                 height: 18px;
-                top: 35%;
+                // top: 35%;
                 // top: 17px;
                 // right: 7%;
-                left: 95%;
+                // left: 95%;
                 // transform: translateX(-50%);
             }
         }
 
         &::before {
-            transform: translateX(-50%) rotate(270deg);
+            transform: rotate(270deg);
         }
 
         &::after {
-            transform: translateX(-50%) rotate(180deg);
+            transform: rotate(180deg);
         }
 
         &--active {
