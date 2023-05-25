@@ -91,10 +91,14 @@ body {
 
 .container {
     max-width: 1140px;
-    // max-width: 1170px;
-    // 1140
     margin: 0 auto;
     padding: 0 15px;
+
+    // max-width: 1170px;
+    // 1140
+    // @media (max-width: 992px) {
+    //     padding: 0px;
+    // }
 }
 
 .title {
@@ -103,20 +107,20 @@ body {
     color: $de;
     // font-weight: 300;
 
-    @media (max-width: 1200px) {
-        font-size: 34px;
-    }
+    // @media (max-width: 1200px) {
+    //     font-size: 34px;
+    // }
 
-    @media (max-width: 992px) {
-        font-size: 32px;
-    }
+    // @media (max-width: 992px) {
+    //     font-size: 32px;
+    // }
 
-    @media (max-width: 768px) {
-        font-size: 30px;
-    }
+    // @media (max-width: 768px) {
+    //     font-size: 30px;
+    // }
 
     @media (max-width: 576px) {
-        font-size: 26px;
+        font-size: 22px;
     }
 
     &--bem {

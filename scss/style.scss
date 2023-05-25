@@ -4,6 +4,8 @@
 @import 'global';
 @import 'libs';
 
+// header services training
+// проблема с контейнером 
 .svg {
     margin-right: 15px;
 }
@@ -17,7 +19,7 @@
     z-index: 999;
     // background-color: red;
     padding-top: 10px;
-    position: relative;
+    // position: relative;
 
     @media (max-width: 1200px) {
         padding-bottom: 50px;
@@ -62,10 +64,15 @@
     }
 
     &__left {
-        @media (max-width: 768px) {
+        @media (max-width: 1200px) {
             display: flex;
             align-items: center;
+            background-color: rgba(0, 0, 0, 0.95);
         }
+
+        // @media (max-width: 768px) {
+
+        // }
     }
 
     &__right {
@@ -178,6 +185,8 @@
         @media (max-width: 1200px) {
             padding-left: 35px;
             border-left: 1px dashed yellow;
+
+
         }
 
         @media (max-width: 768px) {
@@ -204,20 +213,16 @@
 
             @media (max-width: 1200px) {
                 border-right: none;
+
             }
         }
 
         &--consultations {
-            @media (max-width: 768px) {
+            @media (max-width:1200px) {
                 order: -1;
                 z-index: 100;
             }
         }
-    }
-
-    &__text span {}
-
-    &__text p {
     }
 
     &__info {
@@ -263,6 +268,7 @@
         // background-color: red;
         max-width: 710px;
         width: 100%;
+        background-color: rgba(0, 0, 0, 0.95);
     }
 
     @media (max-width: 768px) {
@@ -344,6 +350,10 @@
         justify-content: space-between;
         gap: 25px;
 
+        // @media (max-width: 1200px) {
+        //     background-color: rgba(0, 0, 0, 0.4);
+        // }
+
         @media (max-width: 768px) {
             transform: translateX(-200%);
             position: absolute;
@@ -420,9 +430,28 @@
     height: 75vh;
     // возможно надо до 100
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: end;
     align-items: end;
     text-transform: uppercase;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    @media (max-width: 1200px) {
+        height: 100vh;
+    }
+
+    @media (max-width: 992px) {}
+
+    @media (max-width: 768px) {
+        height: 85vh;
+        padding: 0;
+    }
+
+    @media (max-width: 576px) {
+        height: 100vh;
+    }
 
     &__title {
         text-align: center;
@@ -431,6 +460,33 @@
         font-size: 40px;
         font-weight: 900;
         text-shadow: 1px 1px 2px #000;
+
+        @media (max-width: 1200px) {
+            max-width: 780px;
+            margin: 0 auto 100px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 25px;
+            margin: 0 auto 30px;
+        }
+    }
+
+    &__box {
+        background-color: rgba(0, 0, 0, 0.4);
+
+        @media (max-width: 1200px) {
+            padding: 0 15px;
+        }
+
+        @media (max-width: 992px) {
+            width: 100%;
+        }
+
+        @media (max-width: 576px) {
+            background-color: rgba(0, 0, 0, 0.8);
+
+        }
     }
 
     &__text {
@@ -438,8 +494,15 @@
         // width: 100%;
         text-align: center;
         font-size: 20px;
-        margin-bottom: 30px;
+        // margin-bottom: 30px;
         line-height: 1;
+        padding: 30px 35px 30px 0px;
+
+
+        @media (max-width: 768px) {
+            padding: 30px 0px;
+            width: 100%;
+        }
     }
 }
 
@@ -447,6 +510,17 @@
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+
+    @media (max-width: 1200px) {
+        margin-bottom: 25px;
+    }
+
+    @media (max-width: 768px) {
+        display: block;
+        margin-bottom: 70px;
+
+        // background-color: rgba(0, 0, 0, 0.4);
+    }
 
     &__input {
         outline: none;
@@ -459,10 +533,24 @@
         color: #fee301;
         padding: 15px 95px 15px 15px;
 
-        &:not(:last-child) {
-            margin-right: 10px;
+        @media (max-width: 992px) {
+            padding: 15px 45px 15px 15px;
         }
 
+        @media (max-width: 768px) {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 576px) {}
+
+        &:not(:last-child) {
+            margin-right: 10px;
+
+            @media (max-width: 1200px) {
+                margin-right: 0px;
+            }
+        }
 
         // box-sizing: border-box;
         // width: 33%;
@@ -485,6 +573,10 @@
         // cursor: pointer;
         transition: background-color 0.5s;
 
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+
         &:focus {
             color: $focus;
         }
@@ -504,43 +596,147 @@
     padding: 70px 0;
     background-color: $ac;
 
+    @media (max-width: 768px) {
+        padding: 50px 0;
+    }
+
+    &__box {
+        // display: flex;
+        // justify-content: center;
+        // max-width: 750px;
+        // margin: 0 auto;
+
+        @media (max-width: 1200px) {
+            max-width: 750px;
+            margin: 0 auto;
+        }
+    }
+
     &__title {
         margin-bottom: 70px;
+
+        @media (max-width: 576px) {
+            margin-bottom: 50px;
+        }
     }
 
     &__items {
         display: flex;
         flex-wrap: wrap;
         gap: 70px 0;
+
+        @media (max-width: 1200px) {
+            justify-content: center;
+        }
+
+        @media (max-width: 576px) {
+            gap: 50px 0;
+        }
+
     }
 
     &__item {
         font-size: 20px;
         color: $de;
-        width: 370px;
+        max-width: 370px;
         display: flex;
         padding-right: 20px;
         padding-left: 20px;
+        width: 33%;
+
+        @media (max-width: 1200px) {
+            // max-width: 245px;
+            display: block;
+            // width: 100%;
+            text-align: center;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+        @media (max-width: 768px) {
+            max-width: 365px;
+            width: inherit;
+            width: 50%;
+
+            // &:nth-child(2n+2) {
+            //     border-right: 1px dashed $de;
+            // }
+        }
+
+        @media (max-width: 576px) {
+            font-size: 19px;
+            padding: 0;
+        }
 
         &:not(:last-child) {
+            // border-right: none;
             border-right: 1px dashed $de;
+
+            @media (max-width: 1200px) {
+                border-right: 1px dashed $de;
+            }
+
+            @media (max-width: 768px) {
+                // border-right: none;
+            }
+
+            @media (max-width: 768px) {
+                // border-right: none;
+            }
         }
 
         &:nth-child(3n+3) {
-            border-right: 0px dashed $de;
+            border-right: none;
+            // border-right: 1px dashed $de;
+
+            @media (max-width: 1200px) {
+                // border-right: 1px dashed $de;
+            }
+
+            @media (max-width: 768px) {
+                border-right: 1px dashed $de;
+                // border-right: none;
+            }
+
+            @media (max-width: 576px) {
+                // border-right: none;
+            }
         }
+
+        &:nth-child(2n+2) {
+
+            // border-right: none;
+            // border-right: 1px dashed $de;
+            @media (max-width: 768px) {
+                // border-right: 1px dashed $de;
+                border-right: none;
+            }
+        }
+
+        // &:nth-child(1n+1) {
+        //     // border-right: none;
+        //     @media (max-width: 576px) {
+        //         border-right: 1px dashed $de;
+        //     }
+        // }
     }
 
     &__svg {
         margin-right: 30px;
         min-width: 50px;
         height: 50px;
+
+        @media (max-width: 1200px) {
+            margin: 0 auto 20px;
+            display: flex;
+        }
     }
 }
 
 
 .training {
     position: relative;
+    overflow: hidden;
 
     &::before {
         content: '';
@@ -553,15 +749,20 @@
         right: -390px;
         margin: auto;
         border-left: 210px solid transparent;
-        border-right: 1710px solid transparent;
+        border-right: 1700px solid transparent;
         border-top: 325px solid #fee301;
         z-index: -1;
+        // margin-right: 1%;
     }
 
     &__wrapper {
         display: flex;
         justify-content: space-between;
         z-index: 1;
+
+        // @media (max-width: 1200px) {
+        //     background-color: rgba(0, 0, 0, 0.5);
+        // }
     }
 
     &__box {
@@ -572,6 +773,10 @@
         background-position: center;
         background-size: cover;
 
+        @media (max-width: 1200px) {
+            display: none;
+        }
+
     }
 
     &__inner {
@@ -580,21 +785,49 @@
         // position: relative;
         width: 60%;
         margin-left: auto;
+        position: relative;
+        z-index: 2;
 
-        // &::before {
-        //     content: "";
-        //     position: absolute;
-        //     top: 0;
-        //     // left: 0;
-        //     margin-left: -70%;
-        //     height: 640px;
-        //     width: 450px;
-        //     // width: 40%;
-        //     background-image: url('../images/what-is-trx.jpg');
-        //     background-repeat: no-repeat;
-        //     background-position: center;
-        //     background-size: cover;
-        // }
+        @media (max-width: 1200px) {
+            background-image: url('../images/what-is-trx.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            // width: 80%;
+            margin: 0 auto;
+            max-width: 768px;
+        }
+
+        @media (max-width: 992px) {
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            padding: 50px 20px;
+        }
+
+
+        &::before {
+            content: "";
+            position: absolute;
+            // top: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+            // left: 0;
+            right: 0;
+            // display: block;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            // margin-left: -70%;
+            // height: 640px;
+            // width: 450px;
+            // // width: 40%;
+            // background-image: url('../images/what-is-trx.jpg');
+            // background-repeat: no-repeat;
+            // background-position: center;
+            // background-size: cover;
+        }
     }
 
 
@@ -602,36 +835,79 @@
         letter-spacing: .03;
         color: #fff;
 
+        @media (max-width: 576px) {
+            font-size: 22px;
+        }
     }
 
     &__text {
         font-size: 18px;
         color: #fff;
+
+        // @include line-clamp(15);
+
     }
 
     &__text p {
         margin-bottom: 20px;
+
+
+        @media (max-width: 576px) {
+            margin-bottom: 0px;
+            display: none;
+
+            &:first-child {
+                display: block;
+            }
+        }
+
+
     }
 }
 
 
 .results {
+    // поменять цвет у иконок
+
+    @media (max-width: 1200px) {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
     &__title {}
 
 
     &__items {
         display: flex;
         justify-content: space-between;
+
+        @media (max-width: 768px) {
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px 0;
+        }
     }
 
     // возможно нужно назвать текст
-    &__text {
+    &__item {
         color: $de;
         max-width: 285px;
         text-align: center;
+
+        @media (max-width: 1200px) {
+            // width: 25%;
+        }
+
+        @media (max-width: 768px) {
+            width: 50%;
+        }
+
+        @media (max-width: 576px) {
+            // width: 25%;
+        }
     }
 
-    &__text p {
+    &__item p {
         max-width: 245px;
         font-size: 18px;
     }
@@ -654,39 +930,32 @@
     color: $de;
 
     &__item {
-        position: relative;
-        perspective: 0px;
-        overflow: hidden;
+        // position: relative;
+        // perspective: 0px;
+        // overflow: hidden;
 
-        &::before,
-        &::after {
-            content: "";
-            position: absolute;
-            top: 30px;
-            right: 35px;
-            height: 36px;
-            width: 2px;
-            background-color: $ac;
-            transition: transform 1s;
-        }
+        // &::before,
+        // &::after {
+        //     content: "";
+        //     position: absolute;
+        //     // top: 30px;
+        //     // right: 35px;
+        //     height: 36px;
+        //     width: 2px;
+        //     background-color: $ac;
+        //     transition: transform 1s;
 
-        &::before {
-            transform: rotate(270deg);
-        }
+        //     @media (max-width: 576px) {
+        //         height: 18px;
+        //         top: 35%;
+        //         // top: 17px;
+        //         // right: 7%;
+        //         left: 95%;
+        //         // transform: translateX(-50%);
+        //     }
+        // }
 
-        &::after {
-            transform: rotate(180deg);
-        }
 
-        &--active {
-            &:before {
-                transform: rotate(500deg);
-            }
-
-            &::after {
-                transform: rotate(400deg);
-            }
-        }
     }
 
     // .accordion__item.active:before {
@@ -703,12 +972,62 @@
         width: 100%;
         margin-bottom: 5px;
         cursor: pointer;
+        position: relative;
+        // perspective: 0px;
+        // overflow: hidden;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            // top: 30px;
+            // right: 35px;
+            height: 36px;
+            width: 2px;
+            background-color: $ac;
+            transition: transform 1s;
+
+            @media (max-width: 576px) {
+                height: 18px;
+                top: 35%;
+                // top: 17px;
+                // right: 7%;
+                left: 95%;
+                // transform: translateX(-50%);
+            }
+        }
+
+        &::before {
+            transform: translateX(-50%) rotate(270deg);
+        }
+
+        &::after {
+            transform: translateX(-50%) rotate(180deg);
+        }
+
+        &--active {
+            &:before {
+                transform: rotate(500deg);
+            }
+
+            &::after {
+                transform: rotate(400deg);
+            }
+        }
     }
 
     &__box {
         padding: 20px 40px;
         background-color: $ac;
         display: inline-block;
+
+        @media (max-width: 768px) {
+            padding: 10px 20px;
+        }
+
+        @media (max-width: 576px) {
+            display: none;
+        }
     }
 
     &__info {
@@ -721,6 +1040,19 @@
         font-weight: 500;
         text-transform: uppercase;
         background-color: #313131;
+
+        @media (max-width: 992px) {
+            margin-right: 20px;
+        }
+
+        @media (max-width: 768px) {
+            padding: 16px 40px 16px 20px;
+            margin-right: 0px;
+        }
+
+        @media (max-width: 576px) {
+            font-size: 16px;
+        }
     }
 
     &__text {

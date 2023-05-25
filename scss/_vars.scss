@@ -1,8 +1,9 @@
 /*$Butler: 'Butler',
 sans-serif;*/
 
-$active: transparent;
-$focus:transparent;
+$active: inherit;
+$focus:inherit;
+// !!!!переделать в сборке
 $hover:#fee301;
 $yellow:#fee301;
 
@@ -78,13 +79,13 @@ $padding-576:30px;
 //     -webkit-line-clamp: $lines-to-show;
 // }
 
-// @mixin line-clamp($line-clamp, ) {
-//     display: -webkit-box;
-//     -webkit-line-clamp: $line-clamp;
-//     -webkit-box-orient: vertical;
-//     overflow: hidden;
+@mixin line-clamp($line-clamp, ) {
+    display: -webkit-box;
+    -webkit-line-clamp: $line-clamp;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 
-// }
+}
 
 // @mixin line-height($font-size, $line-height, ) {
 
