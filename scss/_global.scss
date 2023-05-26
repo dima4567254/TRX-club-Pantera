@@ -96,8 +96,13 @@ body {
 
     // max-width: 1170px;
     // 1140
-    // @media (max-width: 992px) {
-    //     padding: 0px;
+    @media (max-width: 1200px) {
+        // padding: 0px;
+        // max-width: 768px;
+    }
+
+    // &--sm {
+    //     max-width: 768px;
     // }
 }
 

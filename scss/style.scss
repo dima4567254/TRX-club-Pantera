@@ -819,14 +819,6 @@
             bottom: 0;
             width: 100%;
             height: 100%;
-            // margin-left: -70%;
-            // height: 640px;
-            // width: 450px;
-            // // width: 40%;
-            // background-image: url('../images/what-is-trx.jpg');
-            // background-repeat: no-repeat;
-            // background-position: center;
-            // background-size: cover;
         }
     }
 
@@ -867,8 +859,9 @@
 
 
 .results {
-    // поменять цвет у иконок
 
+    // поменять цвет у иконок
+    // не скрывать полностья иконки оставить линию
     @media (max-width: 1200px) {
         max-width: 768px;
         margin: 0 auto;
@@ -932,170 +925,9 @@
     &__item {
         perspective: 0px;
         overflow: hidden;
-        // position: relative;
 
-        // &::before,
-        // &::after {
-        //     // content: "";
-        //     // position: absolute;
-        //     // // top: 30px;
-        //     // // right: 35px;
-        //     height: 36px;
-        //     width: 2px;
-        //     // background-color: $ac;
-        //     // transition: transform 1s;
-        //     display: block;
-        //     content: '';
-        //     background-color: #fee301;
-        //     position: absolute;
-        //     top: 0;
-        //     left: 90%;
-        //     right: 0;
-        //     bottom: 0;
-        //     margin: auto;
-
-        //     @media (max-width: 576px) {
-        //         height: 18px;
-        //         // top: 35%;
-        //         // top: 17px;
-        //         // right: 7%;
-        //         // left: 95%;
-        //         // transform: translateX(-50%);
-        //     }
-        // }
-
-        // &::before {
-        //     transform: rotate(270deg);
-        // }
-
-        // &::after {
-        //     transform: rotate(180deg);
-        // }
-
-        // &--active {
-        //     &:before {
-        //         transform: rotate(500deg);
-        //     }
-
-        //     &::after {
-        //         transform: rotate(400deg);
-        //     }
-        // }
     }
 
-    // .accordion__item.active:before {
-    //     transform: rotate(500deg);
-    // }
-
-    // .accordion__item.active::after {
-    //     transform: rotate(400deg);
-    // }
-
-    // &__start {
-    //     position: relative;
-
-    //     &::before,
-    //     &::after {
-    //         // content: "";
-    //         // position: absolute;
-    //         // // top: 30px;
-    //         // // right: 35px;
-    //         height: 36px;
-    //         width: 2px;
-    //         // background-color: $ac;
-    //         // transition: transform 1s;
-    //         display: block;
-    //         content: '';
-    //         background-color: #fee301;
-    //         position: absolute;
-    //         top: 0;
-    //         left: 90%;
-    //         right: 0;
-    //         bottom: 0;
-    //         margin: auto;
-    //         // !!!! дабавить в техники
-
-    //         @media (max-width: 576px) {
-    //             height: 18px;
-    //             // top: 35%;
-    //             // top: 17px;
-    //             // right: 7%;
-    //             // left: 95%;
-    //             // transform: translateX(-50%);
-    //         }
-    //     }
-
-    //     &::before {
-    //         transform: rotate(270deg);
-    //     }
-
-    //     &::after {
-    //         transform: rotate(180deg);
-    //     }
-
-    //     &--active {
-    //         &:before {
-    //             transform: rotate(500deg);
-    //         }
-
-    //         &::after {
-    //             transform: rotate(400deg);
-    //         }
-    //     }
-    // }
-
-    // &__btn {
-    //     position: relative;
-
-    //     &::before,
-    //     &::after {
-    //         // content: "";
-    //         // position: absolute;
-    //         // // top: 30px;
-    //         // // right: 35px;
-    //         height: 36px;
-    //         width: 2px;
-    //         // background-color: $ac;
-    //         // transition: transform 1s;
-    //         display: block;
-    //         content: '';
-    //         background-color: #fee301;
-    //         position: absolute;
-    //         top: 0;
-    //         left: 90%;
-    //         right: 0;
-    //         bottom: 0;
-    //         margin: auto;
-    //         // !!!! дабавить в техники
-
-    //         @media (max-width: 576px) {
-    //             height: 18px;
-    //             // top: 35%;
-    //             // top: 17px;
-    //             // right: 7%;
-    //             // left: 95%;
-    //             // transform: translateX(-50%);
-    //         }
-    //     }
-
-    //     &::before {
-    //         transform: rotate(270deg);
-    //     }
-
-    //     &::after {
-    //         transform: rotate(180deg);
-    //     }
-
-    //     &--active {
-    //         &:before {
-    //             transform: rotate(500deg);
-    //         }
-
-    //         &::after {
-    //             transform: rotate(400deg);
-    //         }
-    //     }
-    // }
 
     &__wrapper {
         display: flex;
@@ -1120,7 +952,7 @@
             background-color: #fee301;
             position: absolute;
             top: 0;
-            left: 90%;
+            left: 87%;
             right: 0;
             bottom: 0;
             margin: auto;
@@ -1222,6 +1054,25 @@
 
 .gallery {
     padding-top: 70px;
+    position: relative;
+    overflow: hidden;
+
+    &:before {
+        position: absolute;
+        display: block;
+        content: '';
+        width: 0;
+        height: 0;
+        bottom: 0;
+        // top: 0;
+        left: -390px;
+        right: -390px;
+        margin: auto;
+        border-left: 1710px solid transparent;
+        border-right: 210px solid transparent;
+        border-bottom: 325px solid #202020;
+        z-index: -1;
+    }
 
     // не как везде!!!
     &__title {}
@@ -1231,37 +1082,45 @@
     &__images {
         width: 100%;
         height: 530px;
+
+        // height: 44vh;
+        @media (max-width: 1200px) {
+            height: 44vh;
+        }
+
+        @media (max-width: 576px) {
+            height: 37vh;
+        }
     }
 }
 
 
-.gallery-slider {
-    position: relative;
-
-    &:before {
-        position: absolute;
-        display: block;
-        content: '';
-        width: 0;
-        height: 0;
-        bottom: 0;
-        left: -390px;
-        right: -390px;
-        margin: auto;
-        border-left: 1710px solid transparent;
-        border-right: 210px solid transparent;
-        border-bottom: 325px solid #202020;
-    }
-}
+.gallery-slider {}
 
 .gallery-slider {
     &__items {
         background-color: #202020;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    &__inner {
+        @media (max-width: 1200px) {
+            max-width: 768px;
+            margin: 0 auto;
+        }
     }
 
     &__img {
         width: 230px;
         height: 135px;
+        height: 11vh;
+
+        @media (max-width: 1200px) {
+            height: 11vh;
+        }
     }
 
     &__item {
@@ -1330,7 +1189,6 @@
     // left: 50%;
     // transform: translateX(-50%);
     position: absolute;
-
     background-color: #fee301;
     z-index: 2;
     border: none;
@@ -1363,11 +1221,23 @@
 .rates {
     background-color: #202020;
 
+    // @media (max-width: 1200px) {
+    //     max-width: 768px;
+    //     margin: 0 auto;
+    // }
+
+    &__wrapper {
+        @media (max-width: 1200px) {
+            max-width: 768px;
+            margin: 0 auto;
+        }
+    }
+
     &__title {
         color: $white
     }
 
-    &__wrapper {
+    &__list {
         border-left: 8px solid #fee301;
         padding: 10px 0 10px 15px;
     }
@@ -1388,6 +1258,13 @@
         text-transform: uppercase;
         margin-right: 25px;
         font-weight: 500;
+
+        // @media (max-width: 768px) {
+        //     margin-right: 10px;
+        // }
+        @media (max-width: 576px) {
+            font-size: 18px;
+        }
     }
 
     &__subtitle span {
@@ -1398,6 +1275,8 @@
     }
 
     &__svg {
+        min-width: 19px;
+        height: 12px;
         transition: transform .5s;
 
         &--active {
@@ -1415,7 +1294,7 @@
         margin-bottom: 30px;
         // transform: translate(0, 50%);
         transition: transform 5.5s;
-        transition: translate 5.5s;
+        // transition: translate 5.5s;
     }
 
     &__items {
@@ -1462,6 +1341,21 @@
             background-color: $ac;
             color: black;
         }
+
+        @media (max-width: 1200px) {
+            padding: 15px;
+            width: 30%;
+        }
+
+
+
+        @media (max-width: 768px) {
+            width: 47%;
+        }
+
+        @media (max-width: 576px) {
+            width: 100%;
+        }
     }
 
     &__item span {
@@ -1475,6 +1369,14 @@
         &--personal {
             color: #fee301;
         }
+
+        // @media (max-width: 1200px) {
+        //     font-size: 23px;
+        // }
+
+        @media (max-width: 1200px) {
+            font-size: 20px;
+        }
     }
 
     &__price {
@@ -1485,10 +1387,22 @@
         &--personal {
             color: $black;
         }
+
+        @media (max-width: 1200px) {
+            font-size: 46px;
+        }
+
+        @media (max-width: 992px) {
+            font-size: 45px;
+        }
     }
 
     &__training {
         font-size: 24px;
+
+        @media (max-width: 992px) {
+            display: block;
+        }
     }
 
     &__simbol {
@@ -1497,6 +1411,10 @@
 
         &--personal {
             color: $black;
+        }
+
+        @media (max-width: 1200px) {
+            font-size: 46px;
         }
     }
 
@@ -1528,6 +1446,26 @@
     padding-bottom: 70px;
     // !!! не как везде
     // background-color: #202020;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        z-index: -2;
+        position: absolute;
+        // display: block;
+        content: '';
+        width: 0;
+        height: 0;
+        // top: -120px;
+        top: -30px;
+        left: -390px;
+        right: -390px;
+        // margin: auto;
+        border-left: 210px solid transparent;
+        border-right: 1710px solid transparent;
+        border-top: 325px solid #202020;
+    }
 
     &__box {
         padding-bottom: 70px;
@@ -1552,46 +1490,34 @@
     color: #5d5d5d;
     border-collapse: collapse;
     font-size: 18px;
-    position: relative;
-    // border-left: 210px solid transparent;
-    // border-right: 1710px solid transparent;
-    // border-top: 325px solid #202020;
-    // width: 0;
-    // height: 0;
-    // top: -30px;
-    // left: -390px;
-    // right: -390px;
 
-
-    &::before {
-        content: "";
-        z-index: -2;
-        position: absolute;
-        // display: block;
-        content: '';
-        width: 0;
-        height: 0;
-        // top: -120px;
-        top: -30px;
-        left: -390px;
-        right: -390px;
-        // margin: auto;
-        border-left: 210px solid transparent;
-        border-right: 1710px solid transparent;
-        border-top: 325px solid #202020;
+    @media (max-width: 992px) {
+        max-width: 768px;
+        margin: 0 auto;
     }
+
 
     &__time {
         background-color: #bababa;
         text-align: center;
         padding: 46px 33px;
 
+
         &--times {
             padding: 15px 10px;
+            display: table-cell;
+
+            // @media (max-width: 768px) {
+            //     display: table-cell;
+            // }
         }
 
         &--time {
             background-color: #cecece;
+        }
+
+        @media (max-width: 1200px) {
+            padding: 15px 20px;
         }
     }
 
@@ -1602,10 +1528,20 @@
     &__item {
         background-color: #efefef;
         padding: 15px 20px;
-
-        // &:not(:last-child) {
-        //     border-right: 1px solid #bbb;
+        display: none;
+        // display: block;
+        // @media (max-width: 768px) {
+        //     display: block;
         // }
+        // display: revert;
+
+        @media (max-width: 1200px) {
+            padding: 15px;
+        }
+
+        @media (max-width: 992px) {
+            padding: 15px 10px;
+        }
 
         &--item {
             background-color: #E3E3E3;
@@ -1614,6 +1550,12 @@
         &--box {
             padding: 14px 20px;
         }
+
+        &--wenstay {
+            display: revert;
+        }
+
+
     }
 
     &__item p {
@@ -1632,6 +1574,11 @@
         color: $white;
         padding: 27px 10px;
         background-color: #676767;
+        display: block;
+
+        // @media (max-width: 768px) {
+        //     display: block;
+        // }
 
         &--even {
             background-color: #5d5d5d;
@@ -1640,6 +1587,17 @@
         &--first {
             color: #5d5d5d;
             background-color: $ac;
+            display: table-cell;
+
+            // @media (max-width: 768px) {
+            //     display: table-cell;
+            // }
+
+        }
+
+
+        @media (max-width: 1200px) {
+            padding: 20px 10px;
         }
     }
 
@@ -1650,6 +1608,10 @@
     &__td p {
         font-weight: 900;
     }
+}
+
+.wenstay {
+    display: revert;
 }
 
 .slider-coaches {

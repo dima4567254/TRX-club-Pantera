@@ -111,14 +111,35 @@ $('.menu__btn').on('click', function () {
 
 $('.accordion__wrapper').on('click', function () {
     $(this).next().toggleClass('accordion__text--active');
-    // $(this).toggleClass('accordion__wrapper--active');
-    // $(this).toggleClass('questions__text--active');
-    // $(this)('.accordion__wrapper').toggleClass('accordion__wrapper--active');
-    // $(this)('.accordion__btn').removeClass('active');
-    // $(this)('.accordion__btn').add('active');
-    // $('.accordion__btn').toggleClass('active');
 });
 
+// $('.about-start').on('click', function () {
+//     $(this).next().toggleClass('wenstay');
+// });
+
+// $(".about-start").click(function () {
+//     $(this).toggleClass("wenstay");
+// });
+
+document.querySelectorAll('.start').forEach((item) =>
+
+        item.addEventListener('click', () => {
+            const parent = item;
+            // const parent = item.parentNode;
+
+            if (parent.classList.contains('wenstay')) {
+                parent.classList.remove('wenstay');
+            }
+            else {
+                document
+                    .querySelectorAll('.accordion__wrapper')
+                    .forEach((child) => child.classList.remove('wenstay'))
+
+                parent.classList.toggle('wenstay');
+                // parent.classList.toggleClass('accordion__wrapper--active');
+            }
+        })
+    )
 // const btn = document.querySelector('.accordion__item');
 
 // btn.addEventListener('click', () => {
