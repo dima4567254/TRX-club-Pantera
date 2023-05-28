@@ -9,6 +9,11 @@ $('.menu__btn').on('click', function () {
     $('.menu__btn').toggleClass('active');
 });
 
+// $('.menu__btn, .menu a').on('click', function () {
+//     $('.menu__btn,.menu__items').toggleClass('menu__items--active');
+//     // для крестика и для меню и что бы закрывалось меню после выбора сcылки
+// });
+// ------------------------------------
 // $('.rates__list')('click', function () {
 //     $('.rates__items').toggleClass('active');
 //     // для крестика и для меню и что бы закрывалось меню после выбора сcылки
@@ -123,23 +128,23 @@ $('.accordion__wrapper').on('click', function () {
 
 document.querySelectorAll('.start').forEach((item) =>
 
-        item.addEventListener('click', () => {
-            const parent = item;
-            // const parent = item.parentNode;
+    item.addEventListener('click', () => {
+        const parent = item;
+        // const parent = item.parentNode;
 
-            if (parent.classList.contains('wenstay')) {
-                parent.classList.remove('wenstay');
-            }
-            else {
-                document
-                    .querySelectorAll('.accordion__wrapper')
-                    .forEach((child) => child.classList.remove('wenstay'))
+        if (parent.classList.contains('wenstay')) {
+            parent.classList.remove('wenstay');
+        }
+        else {
+            document
+                .querySelectorAll('.accordion__wrapper')
+                .forEach((child) => child.classList.remove('wenstay'))
 
-                parent.classList.toggle('wenstay');
-                // parent.classList.toggleClass('accordion__wrapper--active');
-            }
-        })
-    )
+            parent.classList.toggle('wenstay');
+            // parent.classList.toggleClass('accordion__wrapper--active');
+        }
+    })
+)
 // const btn = document.querySelector('.accordion__item');
 
 // btn.addEventListener('click', () => {
@@ -258,79 +263,76 @@ $('.gallery-slider__items').slick({
     dots: false,
     arrows: false,
     asNavFor: '.gallery-slider-big',
-    // focusOnSelect: true,
-    // // slidesToShow: 5, //кол-во слайдов
-    // slidesToScroll: 1,//кол-во переключния слайдовза 1 раз
-    // slidesPerGroup: 5,
-    // centeredSlides: true, //слайд по центру
-    // // centerMode: true,
-    // // centerPadding: '60px',
-    // centerMode: true,
     centerPadding: '0px',// убирает кусочки слайдов по бокам
-    // slidesToShow: 5,
     autoplaySpeed: 2000,
     autoplay: true,
-
     loop: true,//бесконечность
-    // // vertical: true,
-    // // draggable: false
-    // variableWidth: true,
     slidesToShow: 5,
     slidesToScroll: 1,
     centerMode: true,
     focusOnSelect: true,
-    draggable: false,
+    draggable: false, //перелистывание слайдов
 });
 
 $('.gallery-slider-big').slick({
-    // dots: false,
-    // arrows: false,
-    // centeredSlides: true,
-    // autoplaySpeed: 2000,
-    // autoplay: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
     fade: true,
-    // variableWidth: true,
-
     asNavFor: '.gallery-slider__items',
 });
 
 $('.slider-coaches').slick({
-    // dots: false,
-    // arrows: false,
-    // centeredSlides: true,
-    // autoplaySpeed: 2000,
-    // autoplay: true,
     slidesToShow: 2,
     slidesToScroll: 1,
     arrows: true,
     prevArrow: '<div class="prev"></div>',
     nextArrow: '<div class="next"></div>',
-    // fade: true,
-    // variableWidth: true,
-
-    // asNavFor: '.gallery-slider__items',
+    responsive: [
+        {
+            breakpoint: 577,
+            settings: {
+                slidesToShow: 1,
+            }
+        },
+    ]
 });
 
 $('.slider-blog').slick({
-    // dots: false,
-    // arrows: false,
-    // centeredSlides: true,
-    // autoplaySpeed: 2000,
-    // autoplay: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: true,
     prevArrow: '<div class="prev-blog"></div>',
     nextArrow: '<div class="next-blog"></div>',
-    // fade: true,
-    // variableWidth: true,
-
-    // asNavFor: '.gallery-slider__items',
+    responsive: [
+        {
+            breakpoint: 769,
+            settings: {
+                slidesToShow: 1,
+            }
+        },
+    ]
 });
 
+
+$(function () {
+    let header = $('.menu');
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 200) {
+            header.addClass('menu-fixed');
+        } else {
+            header.removeClass('menu-fixed');
+        }
+    });
+});
+
+$(".menu a").on("click", function (event) {
+    event.preventDefault();
+    var id = $(this).attr('href'),
+        top = $(id).offset().top;
+    $('body,html').animate({ scrollTop: top }, 1500);
+});
 // $(function name() {
 //     $('.accordion__wrapper').on('click', function () {
 //         $(this).next().toggleClass('accordion__text--active');
