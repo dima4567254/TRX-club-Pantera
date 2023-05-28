@@ -316,10 +316,10 @@ $('.slider-blog').slick({
 
 
 $(function () {
-    let header = $('.menu');
+    let header = $('.header__left');
 
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 200) {
+        if ($(this).scrollTop() > 210) {
             header.addClass('menu-fixed');
         } else {
             header.removeClass('menu-fixed');

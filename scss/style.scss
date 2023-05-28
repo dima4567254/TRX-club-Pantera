@@ -10,6 +10,8 @@
 // скролы
 // липкое меню 
 // адаптив футер
+// сверстать страници в блоге
+// модальные окна
 .svg {
     margin-right: 15px;
 }
@@ -49,6 +51,7 @@
         margin-bottom: 10px;
         display: flex;
         justify-content: space-between;
+        z-index: 1;
 
         @media (max-width: 1200px) {
             flex-wrap: wrap;
@@ -87,7 +90,7 @@
 
         @media (max-width: 576px) {
             position: inherit;
-            top: 0;
+            top: 5px;
             left: 0;
             right: 0;
             z-index: 100;
@@ -190,11 +193,11 @@
         align-items: start;
 
         @media (max-width: 768px) {
-            display: none;
+            display: flex;
             align-items: center;
 
             &--consultations {
-                display: flex;
+                display: none;
             }
         }
     }
@@ -213,20 +216,31 @@
             animation-timing-function: linear;
             animation-iteration-count: infinite;
         }
+
+        @media (max-width: 576px) {
+            margin-right: 25px;
+        }
     }
 
     &__text {
         @media (max-width: 1200px) {
             padding-left: 35px;
             border-left: 1px dashed yellow;
-
-
         }
 
         @media (max-width: 768px) {
             border-left: none;
             padding-left: 0;
             min-width: 180px;
+        }
+
+
+        &--text {
+            @media (max-width: 576px) {
+                padding-left: 35px;
+                border-left: 1px dashed yellow;
+                min-width: 230px;
+            }
         }
     }
 
@@ -242,17 +256,26 @@
 
     &__item {
 
-        @media (max-width: 576px) {
-            display: none;
+        // @media (max-width: 576px) {
+        //     display: none;
+        // }
+
+        @media (max-width: 1200px) {
+            &:nth-child(3) {
+                order: -1;
+            }
         }
 
         &:not(:last-child) {
             border-right: 1px dashed $yellow;
-            padding-right: 25px;
+            padding-right: 45px;
 
             @media (max-width: 1200px) {
                 border-right: none;
+            }
 
+            @media (max-width: 576px) {
+                padding-right: 0px;
             }
 
         }
@@ -486,11 +509,11 @@
     display: flex;
     flex-direction: column;
     justify-content: end;
-    align-items: end;
+    // align-items: end;
     text-transform: uppercase;
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 0 15px;
+    // max-width: 1140px;
+    // margin: 0 auto;
+    // padding: 0 15px;
 
     @media (max-width: 1200px) {
         height: 100vh;
@@ -787,7 +810,7 @@
     }
 }
 
-
+// 993 проблема
 .training {
     position: relative;
     overflow: hidden;
@@ -813,10 +836,13 @@
         display: flex;
         justify-content: space-between;
         z-index: 1;
+        max-width: 1140px;
+        margin: 0 auto;
 
-        // @media (max-width: 1200px) {
-        //     background-color: rgba(0, 0, 0, 0.5);
-        // }
+        @media (max-width: 1200px) {
+            // background-color: rgba(0, 0, 0, 0.5);
+            // max-width: 768px;
+        }
     }
 
     &__box {
@@ -830,7 +856,6 @@
         @media (max-width: 1200px) {
             display: none;
         }
-
     }
 
     &__inner {
@@ -847,9 +872,11 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-            // width: 80%;
-            margin: 0 auto;
+            margin-left: inherit;
+            width: inherit;
             max-width: 768px;
+            margin: 0 auto;
+
         }
 
         @media (max-width: 992px) {
@@ -1912,8 +1939,6 @@
     //     justify-content: center;
     // }
 
-
-
     &__item {
         max-width: 370px;
         padding-left: 5px;
@@ -2049,75 +2074,123 @@
 }
 
 .footer {
+
     // background-color: $black;
-    // margin-top: -50px;
-    z-index: 999;
-    padding-bottom: 50px;
-    background-color: #202020;
+    &__social {
+        padding: 6px 0px 6px 200px;
+        top: -50px;
+        display: flex;
+        justify-content: end;
+        background-color: transparent;
+
+        @media (max-width: 1200px) {
+            justify-content: start;
+            padding: 5px 0px 5px 110px;
+        }
+
+        @media (max-width: 768px) {
+            padding: 5px 0px 5px 10px;
+        }
+    }
+
 
     &__wrapper {
         display: flex;
         justify-content: center;
-
     }
 
     &__contacts {
         // background-color: #202020;
         // padding: 0px 0px 0px 40px;
-        padding: 3px 0px 2px 40px;
+        padding: 0px 15px 0px 40px;
         justify-content: start;
         display: flex;
 
-        // &__contacts {
-
-        // display: flex;
-        // justify-content: space-between;
-
         @media (max-width: 1200px) {
+            width: 44%;
             flex-wrap: wrap;
             // margin-bottom: 0;
-            max-width: 300px;
-            margin-bottom: 10px;
+            max-width: 350px;
+            padding: 10px 15px 0px 40px;
             // !!! 
             // записать куда небудь этот способ с флекс врап
         }
 
-        // }
+        @media (max-width: 992px) {
+            max-width: 330px;
+        }
+
+        @media (max-width: 576px) {
+            padding: 20px 15px 0px 15px;
+            // max-width: 300px;
+        }
     }
 
     &__left {
-        width: 60%;
-        margin-top: 50px;
+        // width: 60%;
         // margin-top: -50px;
-        justify-content: space-between;
+        // margin-top: -50px;
         display: flex;
+        justify-content: center;
+        background-color: #202020;
+        // margin-top: -50px;
+        z-index: 100;
+        padding-bottom: 50px;
+
+        @media (max-width: 768px) {
+            display: block;
+        }
+
         // padding: 5px 0px 5px 40px;
     }
 
     &__logo {
-        width: 40%;
+        width: 35%;
         justify-content: end;
-        margin-top: -50px;
+        margin-top: -51px;
 
         @media (max-width: 1200px) {
             margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            width: 100%;
+            justify-content: center;
         }
     }
 }
 
 .social {
-    background-color: rgba(0, 0, 0, 0.6);
-    // background-color: transparent;
+    // background-color: rgba(0, 0, 0, 0.6);
+    // включить
+
     // opacity: 0.1;
     // padding-left: 40px;
-    padding: 6px 0px 6px 40px;
-    z-index: 999;
-    // margin-top: -50px;
+    background-color: rgba(0, 0, 0, 0.6);
+    // padding: 6px 0px 6px 200px;
+    z-index: 100;
 
+    // margin-top: -50px;
+    // display: flex;
+    // justify-content: end;
+
+
+
+
+    &__wrapper {
+        width: 62%;
+
+        @media (max-width: 1200px) {
+            width: inherit;
+            // max-width: 768px;
+            // margin: 0 auto;
+        }
+    }
 
     &__link {
         width: 36px;
         height: 36px;
+        display: inline-block;
         // padding: 0px 10px 0px 10px;
 
         &:not(:last-child) {
@@ -2125,7 +2198,7 @@
         }
 
         // background-color: rgba(0, 0, 0, 0.6);
-        display: inline-block;
+        // display: inline-block;
         // justify-content: space-between;
     }
 
@@ -2140,5 +2213,6 @@
         }
     }
 }
+
 
 @import 'media';
