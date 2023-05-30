@@ -126,25 +126,25 @@ $('.accordion__wrapper').on('click', function () {
 //     $(this).toggleClass("wenstay");
 // });
 
-document.querySelectorAll('.start').forEach((item) =>
+// document.querySelectorAll('.start').forEach((item) =>
 
-    item.addEventListener('click', () => {
-        const parent = item;
-        // const parent = item.parentNode;
+//     item.addEventListener('click', () => {
+//         const parent = item;
+//         // const parent = item.parentNode;
 
-        if (parent.classList.contains('wenstay')) {
-            parent.classList.remove('wenstay');
-        }
-        else {
-            document
-                .querySelectorAll('.accordion__wrapper')
-                .forEach((child) => child.classList.remove('wenstay'))
+//         if (parent.classList.contains('wenstay')) {
+//             parent.classList.remove('wenstay');
+//         }
+//         else {
+//             document
+//                 .querySelectorAll('.accordion__wrapper')
+//                 .forEach((child) => child.classList.remove('wenstay'))
 
-            parent.classList.toggle('wenstay');
-            // parent.classList.toggleClass('accordion__wrapper--active');
-        }
-    })
-)
+//             parent.classList.toggle('wenstay');
+//             // parent.classList.toggleClass('accordion__wrapper--active');
+//         }
+//     })
+// )
 // const btn = document.querySelector('.accordion__item');
 
 // btn.addEventListener('click', () => {
@@ -400,5 +400,178 @@ $(".menu a").on("click", function (event) {
 //         asNavFor: '.gallery-slider__items',
 //     });
 // });
+// var acc = document.getElementsByClassName(".about__td");
+
+// document.getElementById('.about__td').addEventListener('click', (event) => {
+//     const t = event.target.closest('about__td');
+//     // if (t) { event.target.style.backgroundColor = "purple" }
+// });
+
+// for (let span of document.querySelectorAll('.about__td')) {
+//     span.onclick = () => {
+//         // span.style.backgroundColor = "gold"
+//         span.classList.addClass('about__td--active');
+
+//     }
+// }
+
+// (function (document) {
+
+//     var selectedItem = null;
+
+//     document.querySelector('ul')
+//         .addEventListener('click', function (e) {
+//             if (selectedItem) {
+//                 selectedItem.className = selectedItem.className.replace(' selected', '');
+//             }
+
+//             if (e.target.className.indexOf('selected') == -1) {
+//                 e.target.className += ' selected';
+//             }
+//             selectedItem = e.target;
+//         });
+// })(document);
 
 
+//   document.querySelector('.out-1').innerHTML += a[i]
+
+
+// document.body.addEventListener("click", function (event) {
+//     const elem = event.target.addClass(".about__td");
+//     if (elem) {
+//         elem.classList.toggle("about__td");
+//         // const window = elem.closest(".book").querySelector(".window");
+//         // window.classList.toggle("window_show");
+//     }
+// });
+
+
+// const option = document.querySelectorAll('.about__td');
+
+// // console.log(option);
+// // option.addEventListener('click', () => {
+// function myClick() {
+
+//     for (let i = 0; i < option.length; i = i + 1) {
+//         // console.log(option[i].selected);
+//         // if (option[i]) {
+//             // console.log(option[i].innerHTML);
+//             option.classList.addClass('about__td--active');
+//         // }
+//     }
+// }
+
+// option.onclick = myClick;
+// });
+
+
+// document.querySelectorAll('.about__td').forEach((item) =>
+
+
+//     item.addEventListener('click', () => {
+//         const parent = item;
+
+
+
+// const parent = item.parentNode;
+// for (var i = 0; i < parent; i++) {
+//     parent.classList.addClass('about__td--active');
+//     //         }
+// }
+
+// if (parent.classList.contains('about__td--active')) {
+//     // parent.classList.remove('about__td--active');
+//     // parent.classList.addClass('about__td--active');
+//     // for (var i = 0; i < parent; i++) {
+//     //     parent.classList.addClass('about__td--active');
+//     //     //         }
+//     // }
+// }
+// else {
+//     document
+//         .querySelectorAll('.about__td')
+//         .forEach((child) => child.classList.remove('about__td--active'))
+
+//     parent.classList.toggle('about__td--active');
+//     // parent.classList.toggleClass('accordion__wrapper--active');
+// }
+//     })
+// )
+//  () =>
+// about__td
+// about__td--active
+// let spans = document.querySelector('.about__td');
+
+// spans.addEventListener('click', () =>
+//     // spans.addEventListener('click', () => );
+
+//     function changeColor(event) {
+//         let span = event.target.closest('.about__td');
+//         if (!span) return;
+//         span.classList.toggle('about__td--active');
+//     })
+
+document.querySelectorAll('.about__td').forEach((item) =>
+
+    item.addEventListener('click', () => {
+        const parent = item;
+        // parent.classList.toggle('about__td--active');
+        // document
+        //     .querySelectorAll('.about__td')
+        //     .forEach((child) => child.classList.remove('about__td--active'))
+
+
+        // parent.classList.toggle('about__td--active');
+        // console.log('work2');
+        // // if (parent.classList.contains('about__td--active')) {
+
+        // let elements = document.getElementsByClassName("about__td");
+        // for (let i = 0; i < elements.length; i++) {/*прокручиваем в цикле все элементы*/
+        //     // elements[i].addEventListener('click', function () {  /*при клике на элемент
+        //     if (parent.classList.contains('about__td--none')) {
+        //         for (let i = 0; i < elements.length; i++) {
+        //             elements[i].classList.remove('about__td--none'); /*удаляем у всех class active*/
+        //             console.log('23');
+        //         }
+        //         console.log('20');
+        //     }
+        //     else {
+        //         console.log('21');
+        //         for (let i = 0; i < elements.length; i++) {
+        //             elements[i].classList.add('about__td--none'); /*удаляем у всех class active*/
+        //             console.log('24');
+        //         }
+        //     }
+        //     // 2 шаг вешает всем дисплей ноне
+        // }
+
+        document
+            .querySelectorAll('.about__item')
+            .forEach((child) => child.classList.remove('about__item--active'))
+
+
+        parent.classList.toggle('about__item--active');
+        let item = document.getElementsByClassName("about__item");
+        for (let i = 0; i < item.length; i++) {/*прокручиваем в цикле все элементы*/
+            // elements[i].addEventListener('click', function () {  /*при клике на элемент
+            if (parent.classList.contains('about__item--none')) {
+                for (let i = 0; i < item.length; i++) {
+                    item[i].classList.remove('about__item--none'); /*удаляем у всех class active*/
+                    console.log('23');
+                }
+                console.log('20');
+            }
+            else {
+                console.log('21');
+                for (let i = 0; i < item.length; i++) {
+                    item[i].classList.add('about__item--none'); /*удаляем у всех class active*/
+                    console.log('24');
+                }
+            }
+            // 2 шаг вешает всем дисплей ноне
+        }
+    })
+)
+
+// about__td
+// about__td--active
