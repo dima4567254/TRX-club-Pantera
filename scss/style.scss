@@ -1722,12 +1722,32 @@
 }
 
 .about__item--active {
-    display: flex !important;
+
+    // display: flex !important;
+    // background-color: red !important;
+    // &:first-child {
+    //     display: block !important;
+    // }
+    // &:nth-child(3) {
+        display: block !important;
+    // }
+
+    // &:not(:last-child) {
+    //     display: block !important;
+    // }
+    // вырезает каждый 3 элемнт а точнее пременяется к каждосу третиму
 }
 
 .wenstay {
     display: revert;
+
 }
+
+// .one {
+//     &:first-child {
+//         display: block !important;
+//     }
+// }
 
 .slider-coaches {
     display: flex;

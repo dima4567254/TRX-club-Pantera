@@ -8,6 +8,10 @@ $('.menu__btn').on('click', function () {
 $('.menu__btn').on('click', function () {
     $('.menu__btn').toggleClass('active');
 });
+// let massiv = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// massiv.filter((item, index) => index % 2);
+// console.log(index);
+// console.log(item);
 
 // $('.menu__btn, .menu a').on('click', function () {
 //     $('.menu__btn,.menu__items').toggleClass('menu__items--active');
@@ -511,67 +515,206 @@ $(".menu a").on("click", function (event) {
 //         span.classList.toggle('about__td--active');
 //     })
 
-document.querySelectorAll('.about__td').forEach((item) =>
+// document.querySelectorAll('.about__td').forEach((item) =>
 
-    item.addEventListener('click', () => {
-        const parent = item;
-        // parent.classList.toggle('about__td--active');
-        // document
-        //     .querySelectorAll('.about__td')
-        //     .forEach((child) => child.classList.remove('about__td--active'))
-
-
-        // parent.classList.toggle('about__td--active');
-        // console.log('work2');
-        // // if (parent.classList.contains('about__td--active')) {
-
-        // let elements = document.getElementsByClassName("about__td");
-        // for (let i = 0; i < elements.length; i++) {/*прокручиваем в цикле все элементы*/
-        //     // elements[i].addEventListener('click', function () {  /*при клике на элемент
-        //     if (parent.classList.contains('about__td--none')) {
-        //         for (let i = 0; i < elements.length; i++) {
-        //             elements[i].classList.remove('about__td--none'); /*удаляем у всех class active*/
-        //             console.log('23');
-        //         }
-        //         console.log('20');
-        //     }
-        //     else {
-        //         console.log('21');
-        //         for (let i = 0; i < elements.length; i++) {
-        //             elements[i].classList.add('about__td--none'); /*удаляем у всех class active*/
-        //             console.log('24');
-        //         }
-        //     }
-        //     // 2 шаг вешает всем дисплей ноне
-        // }
-
-        document
-            .querySelectorAll('.about__item')
-            .forEach((child) => child.classList.remove('about__item--active'))
+//     item.addEventListener('click', () => {
+//         const parent = item;
+//         // parent.classList.toggle('about__td--active');
+//         // document
+//         //     .querySelectorAll('.about__td')
+//         //     .forEach((child) => child.classList.remove('about__td--active'))
 
 
-        parent.classList.toggle('about__item--active');
-        let item = document.getElementsByClassName("about__item");
-        for (let i = 0; i < item.length; i++) {/*прокручиваем в цикле все элементы*/
-            // elements[i].addEventListener('click', function () {  /*при клике на элемент
-            if (parent.classList.contains('about__item--none')) {
-                for (let i = 0; i < item.length; i++) {
-                    item[i].classList.remove('about__item--none'); /*удаляем у всех class active*/
-                    console.log('23');
-                }
-                console.log('20');
-            }
-            else {
-                console.log('21');
-                for (let i = 0; i < item.length; i++) {
-                    item[i].classList.add('about__item--none'); /*удаляем у всех class active*/
-                    console.log('24');
-                }
-            }
-            // 2 шаг вешает всем дисплей ноне
-        }
-    })
-)
+//         // parent.classList.toggle('about__td--active');
+//         // console.log('work2');
+//         // // if (parent.classList.contains('about__td--active')) {
+
+//         // let elements = document.getElementsByClassName("about__td");
+//         // for (let i = 0; i < elements.length; i++) {/*прокручиваем в цикле все элементы*/
+//         //     // elements[i].addEventListener('click', function () {  /*при клике на элемент
+//         //     if (parent.classList.contains('about__td--none')) {
+//         //         for (let i = 0; i < elements.length; i++) {
+//         //             elements[i].classList.remove('about__td--none'); /*удаляем у всех class active*/
+//         //             console.log('23');
+//         //         }
+//         //         console.log('20');
+//         //     }
+//         //     else {
+//         //         console.log('21');
+//         //         for (let i = 0; i < elements.length; i++) {
+//         //             elements[i].classList.add('about__td--none'); /*удаляем у всех class active*/
+//         //             console.log('24');
+//         //         }
+//         //     }
+//         //     // 2 шаг вешает всем дисплей ноне
+//         // }
+
+//         document
+//             .querySelectorAll('.about__item')
+//             .forEach((child) => child.classList.remove('about__item--active'))
+
+
+//         parent.classList.toggle('about__item--active');
+//         let item = document.getElementsByClassName("about__item");
+//         for (let i = 0; i < item.length; i++) {/*прокручиваем в цикле все элементы*/
+//             // elements[i].addEventListener('click', function () {  /*при клике на элемент
+//             if (parent.classList.contains('about__item--none')) {
+//                 for (let i = 0; i < item.length; i++) {
+//                     item[i].classList.remove('about__item--none'); /*удаляем у всех class active*/
+//                     console.log('23');
+//                 }
+//                 console.log('20');
+//             }
+//             else {
+//                 console.log('21');
+//                 for (let i = 0; i < item.length; i++) {
+//                     item[i].classList.add('about__item--none'); /*удаляем у всех class active*/
+//                     console.log('24');
+//                 }
+//             }
+//             // 2 шаг вешает всем дисплей ноне
+//         }
+//     })
+// )
 
 // about__td
 // about__td--active
+
+//         }
+//     })
+// )
+// about__td
+// about__td--active
+
+// const it =  document.querySelectorAll('.about__td').forEach(()
+
+// let blocks2 = document.querySelectorAll('.about__td');
+// let blocks = document.querySelectorAll('.block');
+// let blocks2 = document.getElementsByClassName('block');
+// console.log(blocks2);
+
+// for (let i = 0; i < blocks.length; i++) {
+//     blocks[i].onclick = function () {
+//         console.log('work');
+
+//     }
+// }
+// console.log('');
+// forEach бывает для qwery или для js надо отличать
+// часто делают так
+// ---------------------------------------------------
+// let blocks2 = document.querySelector('.westday');
+// function myClick (element) {
+//     // console.log('element');
+//     element.onclick = function () {
+//         let blocks = document.querySelector('.item');
+//         blocks.classList.add('about__item--active');
+//     }
+// };
+
+// blocks2.onclick = myClick;
+// ---------------------------------------------------
+
+// function one() {
+//     console.log('work');
+//     // this
+//     console.log(this.innerHTML);
+//     // this мошная фнкция работает в зависимости от применения
+//     this.style.background = 'green';
+// 
+
+// const els = document.getElementsByClassName('westday');
+// const className = 'open';
+// for (let i in els) {
+//     els[i].onclick = function () {
+//         els[i].classList.contains(className) ? els[i].classList.remove(className) : els[i].classList.add(className)
+//     }
+// }
+let buttonModal = document.querySelector('.about__item');
+let buttonModal4 = document.querySelector('.westday');
+// let buttonModal = document.querySelector('.item');
+buttonModal4.addEventListener('click', () => {
+    // document.querySelectorAll('.westday').forEach((item) =>
+
+    // item.addEventListener('click', () => {
+    // const parent = item;
+    // buttonModal.classList.add('about__item--active');
+    if (buttonModal.classList.contains('about__item--active')) {
+        // document.getElementsByClassName("test")[0];
+        // const elements = parentDOM.getElementsByClassName("about__item")[0];
+        let elements = document.getElementsByClassName("about__item");
+        const numbers = [1, 2, 3];
+        const item = numbers[numbers.length - 1];
+        // console.log(elements);
+        for (let i = 0; i < elements.length; i++) {/*прокручиваем в цикле все элементы*/
+            // elements[i].addEventListener('click', function () {
+            for (let i = 0; i < elements.length; i++) {
+                // let i = 6
+                elements[i].classList.remove('about__item--active'); /*удаляем у всех class active*/
+
+                // console.log(item); // => 3
+                // console.log(numbers); // => 3
+            }
+            // item.classList.add('active2');/*добавляем class active по которому кликнули */
+            // })
+        }
+        // console.log('1');
+    }
+    else {
+        // const elements = parentDOM.getElementsByClassName("about__item")[0];
+        let elements = document.getElementsByClassName("about__item");
+        // 78 элементов
+        for (let i = 0; i < elements.length; i++) {/*прокручиваем в цикле все элементы*/
+            // elements[i].addEventListener('click', function () {
+            // if ((elements[i] % 2) === 0) {
+            for (let i = 0; i < elements.length; i++) {
+                // elements.filter((elements, 4) );
+                // elements.filter((index) => !((index + 1) % 3).add('about__item--active'));
+                // elements.filter((index) => !((index + 1) % 3).elements[i].classList.add('about__item--active'));
+                /*удаляем у всех class active*/
+                // let index2 = ((index + 1) % 3)
+                // let index = 3;
+
+                elements.filter(function (elem) {
+                    elem[i].classList.add('about__item--active');
+                    // if (elem >= 0) {
+                    //     return true;
+                    // } else {
+                    //     return false;
+                    // }
+                });
+                // elements.filter(function (elements, index, ) {
+
+                // код
+                // return true или false
+                // });
+            }
+
+
+            // var numbers = new Array(20, 15, 6, 32, 18, 0, -5, 4, 11);
+
+            // for (var i = 0; i < numbers.length; i++) {
+            //     var number = numbers[i];
+
+            //     if (!(number & 1) && !(i & 1)) {
+            //         console.log("Число " + number + " на позиции " + i + " чётное");
+            //     }
+            // }
+            // }
+            // this.classList.add('active2');/*добавляем class active по которому кликнули */
+            // })
+        }
+        // console.log('2');
+    }
+    // })
+    // const cols = document.querySelectorAll('.col-6');
+    // const first = cols[0];
+    // const last = cols[cols.length - 1];
+
+    // last.className = "col-12";
+}
+);
+
+
+
+
