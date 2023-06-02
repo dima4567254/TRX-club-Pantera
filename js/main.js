@@ -514,7 +514,8 @@ $(".menu a").on("click", function (event) {
 //         if (!span) return;
 //         span.classList.toggle('about__td--active');
 //     })
-
+// -----------------------------------------------------------------
+// начало
 // document.querySelectorAll('.about__td').forEach((item) =>
 
 //     item.addEventListener('click', () => {
@@ -525,58 +526,33 @@ $(".menu a").on("click", function (event) {
 //         //     .forEach((child) => child.classList.remove('about__td--active'))
 
 
-//         // parent.classList.toggle('about__td--active');
+//         parent.classList.toggle('about__td--active');
 //         // console.log('work2');
-//         // // if (parent.classList.contains('about__td--active')) {
+//         // if (parent.classList.contains('about__td--active')) {
 
-//         // let elements = document.getElementsByClassName("about__td");
-//         // for (let i = 0; i < elements.length; i++) {/*прокручиваем в цикле все элементы*/
-//         //     // elements[i].addEventListener('click', function () {  /*при клике на элемент
-//         //     if (parent.classList.contains('about__td--none')) {
-//         //         for (let i = 0; i < elements.length; i++) {
-//         //             elements[i].classList.remove('about__td--none'); /*удаляем у всех class active*/
-//         //             console.log('23');
-//         //         }
-//         //         console.log('20');
-//         //     }
-//         //     else {
-//         //         console.log('21');
-//         //         for (let i = 0; i < elements.length; i++) {
-//         //             elements[i].classList.add('about__td--none'); /*удаляем у всех class active*/
-//         //             console.log('24');
-//         //         }
-//         //     }
-//         //     // 2 шаг вешает всем дисплей ноне
-//         // }
-
-//         document
-//             .querySelectorAll('.about__item')
-//             .forEach((child) => child.classList.remove('about__item--active'))
-
-
-//         parent.classList.toggle('about__item--active');
-//         let item = document.getElementsByClassName("about__item");
-//         for (let i = 0; i < item.length; i++) {/*прокручиваем в цикле все элементы*/
+//         let elements = document.getElementsByClassName("about__td");
+//         for (let i = 0; i < elements.length; i++) {/*прокручиваем в цикле все элементы*/
 //             // elements[i].addEventListener('click', function () {  /*при клике на элемент
-//             if (parent.classList.contains('about__item--none')) {
-//                 for (let i = 0; i < item.length; i++) {
-//                     item[i].classList.remove('about__item--none'); /*удаляем у всех class active*/
-//                     console.log('23');
+//             if (parent.classList.contains('about__td--none')) {
+//                 for (let i = 0; i < elements.length; i++) {
+//                     elements[i].classList.remove('about__td--none'); /*удаляем у всех class active*/
+//                     // console.log('23');
 //                 }
-//                 console.log('20');
+//                 // console.log('20');
 //             }
 //             else {
-//                 console.log('21');
-//                 for (let i = 0; i < item.length; i++) {
-//                     item[i].classList.add('about__item--none'); /*удаляем у всех class active*/
-//                     console.log('24');
+//                 // console.log('21');
+//                 for (let i = 0; i < elements.length; i++) {
+//                     elements[i].classList.add('about__td--none'); /*удаляем у всех class active*/
+//                     // console.log('24');
 //                 }
 //             }
 //             // 2 шаг вешает всем дисплей ноне
 //         }
 //     })
 // )
-
+// конец
+// ----------------------------------
 // about__td
 // about__td--active
 
@@ -621,7 +597,7 @@ $(".menu a").on("click", function (event) {
 //     console.log(this.innerHTML);
 //     // this мошная фнкция работает в зависимости от применения
 //     this.style.background = 'green';
-// 
+//
 
 // const els = document.getElementsByClassName('westday');
 // const className = 'open';
@@ -630,91 +606,212 @@ $(".menu a").on("click", function (event) {
 //         els[i].classList.contains(className) ? els[i].classList.remove(className) : els[i].classList.add(className)
 //     }
 // }
-let buttonModal = document.querySelector('.about__item');
-let buttonModal4 = document.querySelector('.westday');
-// let buttonModal = document.querySelector('.item');
-buttonModal4.addEventListener('click', () => {
-    // document.querySelectorAll('.westday').forEach((item) =>
 
-    // item.addEventListener('click', () => {
-    // const parent = item;
-    // buttonModal.classList.add('about__item--active');
-    if (buttonModal.classList.contains('about__item--active')) {
-        // document.getElementsByClassName("test")[0];
-        // const elements = parentDOM.getElementsByClassName("about__item")[0];
-        let elements = document.getElementsByClassName("about__item");
-        const numbers = [1, 2, 3];
-        const item = numbers[numbers.length - 1];
-        // console.log(elements);
-        for (let i = 0; i < elements.length; i++) {/*прокручиваем в цикле все элементы*/
-            // elements[i].addEventListener('click', function () {
-            for (let i = 0; i < elements.length; i++) {
-                // let i = 6
-                elements[i].classList.remove('about__item--active'); /*удаляем у всех class active*/
+// ------------------------------------------------------------------------------------------------
+// начало2
+// buttonModalAll.addEventListener('click', () => {
+//     // if (buttonModal.classList.contains('about__item--active')) {
+//     let elements = document.getElementsByClassName(".about__td");
+//     for (let i = 0; i < elements.length; i++) {/*прокручиваем в цикле все элементы*/
+//         if (i += 1) {
+//             let elements = document.getElementsByClassName("about__item");
+//             for (let i = 0; i < elements.length; i++) {/*прокручиваем в цикле все элементы*/
+//                 for (let i = 0; i < elements.length; i += 1) {
+//                     elements[i].classList.add('about__item--active');
+//                 }
+//             }
+//         }
+//         // for (let i = 0; i < elements.length; i++) {
+//         //     elements[i].classList.remove('about__item--active'); /*удаляем у всех class active*/
+//         // }
+//     }
+//     // }
+// })
+// конец2
+// ------------------------------------------------------------------------------------------------
+// начало1
+// let buttonModal = document.querySelector('.about__item');
+// let buttonModal4 = document.querySelector('.westday');
+// let buttonModal1 = document.querySelector('.manday');
+// let buttonModalAll = document.querySelector('.about__td');
 
-                // console.log(item); // => 3
-                // console.log(numbers); // => 3
-            }
-            // item.classList.add('active2');/*добавляем class active по которому кликнули */
-            // })
-        }
-        // console.log('1');
+
+// buttonModal4.addEventListener('click', () => {
+//     // console.log('westday');
+//     // if (buttonModal.classList.contains('about__item--active')) {
+//     //     let elements = document.getElementsByClassName("about__item");
+//     //     for (let i = 0; i < elements.length; i++) {/*прокручиваем в цикле все элементы*/
+//     //         for (let i = 0; i < elements.length; i++) {
+//     //             elements[i].classList.remove('about__item--active'); /*удаляем у всех class active*/
+//     //         }
+//     //     }
+//     // }
+//     // else {
+//     // querySelectorAll.
+//     let elements = document.getElementsByClassName("about__item");
+//     // for (let i = 0; i < elements.length; i++) {/*прокручиваем в цикле все элементы*/
+//     for (let i = 0; i < elements.length; i++) {
+//         elements[i].classList.remove('about__item--active'); /*удаляем у всех class active*/
+//     }
+//     // }
+//     for (let i = 0; i < elements.length; i++) {/*прокручиваем в цикле все элементы*/
+//         for (let i = 0; i < elements.length; i++) {
+//             elements[i].classList.remove('about__item--active'); /*удаляем у всех class active*/
+//         }
+//         // 0,1
+//         // let n =5; каждый пятый но из всех 78 элементов получается не каждый пятый
+//         // i=i+1 вывел все элементы
+//         // ++i  вывел все элементы
+//         for (let i = 0; i < elements.length; i++) {
+//             // i =3;
+//             // console.log(i);
+//             // console.log(elements);
+//             elements[i].classList.add('about__item--active');
+
+//             // // every_5[50]; //Пятый элемент
+//             // every_5[0]; //Десятый элемент
+//             // 0- первый
+//             // 1- первый
+//             // 2- все по очереди с первой по 6
+//             // 3- все по очереди с первой по 6
+
+//             //Проверяем
+
+//             // delete elements[1];
+//             // elements.splice(1, 2);
+//             // const arr = [1, 3, 5, 3, 7];
+//             // const value = 3;
+
+//             // const result = arr.filter(function (x) {
+//             //     return x !== value;
+//             // });
+//         }
+//     }
+//     // }
+// }
+// );
+// конец1
+// ------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------
+// начало3
+// buttonModal1.addEventListener('click', () => {
+//     console.log('manday');
+//     // if (buttonModal.classList.contains('about__item--active')) {
+//     //     let elements = document.getElementsByClassName("about__item");
+//     //     for (let i = 0; i < elements.length; i++) {/*прокручиваем в цикле все элементы*/
+//     //         for (let i = 0; i < elements.length; i++) {
+//     //             elements[i].classList.remove('about__item--active'); /*удаляем у всех class active*/
+//     //         }
+//     //     }
+//     // }
+//     // else {
+//     let elements = document.getElementsByClassName("about__item");
+//     for (let i = 0; i < elements.length; i++) {/*прокручиваем в цикле все элементы*/
+//         for (let i = 0; i < elements.length; i++) {
+//             elements[i].classList.remove('about__item--active'); /*удаляем у всех class active*/
+//         }
+//     }
+//     for (let i = 0; i < elements.length; i++) {/*прокручиваем в цикле все элементы*/
+//         for (let i = 0; i < elements.length; i++) {
+//             elements[i].classList.remove('about__item--active'); /*удаляем у всех class active*/
+//         }
+//         for (let i = 0; i < elements.length; i += 0) {
+//             // elements[i].classList.remove('about__item--active');
+//             elements[i].classList.add('about__item--active');
+//         }
+//     }
+//     // }
+// }
+// );
+// конец3
+// ------------------------------------------------------------------------------
+
+
+
+// const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+// const elements = document.getElementsByClassName("about__item");
+// const result = elements.filter(word => word.length > 5);
+
+// console.log(result);
+
+// // const array = [-3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
+
+// function isPrime(num) {
+//     for (let i = 2; num > i; i++) {
+//         if (num % i === 0) {
+//             return false;
+//         }
+//     }
+//     return num > 1;
+// }
+
+// console.log(array.filter(isPrime));
+// about__td - about__td day
+// about__tr about__tr
+// about__item about__item
+function day() {
+    var date = (new Date()).getDay();
+    if (date != 0) {
+        return date;
+    } else {
+        return 1;
     }
-    else {
-        // const elements = parentDOM.getElementsByClassName("about__item")[0];
-        let elements = document.getElementsByClassName("about__item");
-        // 78 элементов
-        for (let i = 0; i < elements.length; i++) {/*прокручиваем в цикле все элементы*/
-            // elements[i].addEventListener('click', function () {
-            // if ((elements[i] % 2) === 0) {
-            for (let i = 0; i < elements.length; i++) {
-                // elements.filter((elements, 4) );
-                // elements.filter((index) => !((index + 1) % 3).add('about__item--active'));
-                // elements.filter((index) => !((index + 1) % 3).elements[i].classList.add('about__item--active'));
-                /*удаляем у всех class active*/
-                // let index2 = ((index + 1) % 3)
-                // let index = 3;
-
-                elements.filter(function (elem) {
-                    elem[i].classList.add('about__item--active');
-                    // if (elem >= 0) {
-                    //     return true;
-                    // } else {
-                    //     return false;
-                    // }
-                });
-                // elements.filter(function (elements, index, ) {
-
-                // код
-                // return true или false
-                // });
-            }
-
-
-            // var numbers = new Array(20, 15, 6, 32, 18, 0, -5, 4, 11);
-
-            // for (var i = 0; i < numbers.length; i++) {
-            //     var number = numbers[i];
-
-            //     if (!(number & 1) && !(i & 1)) {
-            //         console.log("Число " + number + " на позиции " + i + " чётное");
-            //     }
-            // }
-            // }
-            // this.classList.add('active2');/*добавляем class active по которому кликнули */
-            // })
-        }
-        // console.log('2');
-    }
-    // })
-    // const cols = document.querySelectorAll('.col-6');
-    // const first = cols[0];
-    // const last = cols[cols.length - 1];
-
-    // last.className = "col-12";
 }
-);
 
+switchCurDay(day());
+$('.about__td').on('click', function () {
+    if (!$(this).hasClass('about__td--is-active')) {
+        var curDay = $(this).index();
+        switchCurDay(curDay);
+    }
+    $('.about__td').toggleClass('about__td--is-expand');
+});
+function switchCurDay(clickday) {
+    $('.about__td')
+        .removeClass('about__td--is-active')
+        .filter(function (index) {
+            return $(this).index() == clickday;
+        })
+        .addClass('about__td--is-active');
+    $('.about__item')
+        .removeClass('about__item--is-active')
+        .filter(function (index) {
+            return $(this).index() == clickday;
+        })
+        .addClass('about__item--is-active');
+    $('.about__tr').removeClass('about__tr--is-empty');
 
+    $('.about__item--is-active').each(function () {
+        if ($(this).is(':empty')) {
+            $(this).parent().addClass('about__tr--is-empty');
+        }
+    });
+    $('.schedule__tr').each(function (index, el) {
+        var cell = $(el).find('schedule__td').each(function (index, el) { });
+        //console.log(cell, index);
+    });
 
+    // $('.table__item_delete').on('click', function (event) {
+    //     alert('asdasdasdsad');
+    //     var trainerAttr = $(this).attr('data-trainer');
+    //     var trainingAttr = $(this).attr('data-training');
 
+    //     if (typeof trainerAttr !== typeof undefined && trainerAttr !== false && typeof trainingAttr !== typeof undefined && trainingAttr !== false) {
+    //         var popup = $('#test-popup');
+    //         popup.find('.popup-trainer__name').text(trainerList[trainerAttr]['name']);
+    //         popup.find('.popup__title').text(trainingList[trainingAttr]['title']);
+    //         popup.find('.popup__text').text(trainingList[trainingAttr]['descr']);
+    //         popup.find('.popup-trainer').css('background-image', 'url(' + trainerList[trainerAttr]['photo'] + ')');
+
+    //         $.fancybox.open({
+    //             src: '#test-popup',
+    //             type: 'inline',
+    //             opts: {
+    //                 hash: null,
+    //                 defaultType: 'inline',
+    //                 gutter: 0
+    //             }
+    //         });
+    //     }
+    // });
+}

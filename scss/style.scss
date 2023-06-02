@@ -1713,35 +1713,76 @@
     }
 }
 
-.none {
-    display: none;
-}
+// .none {
+//     display: none;
+// }
 
 .about__item--none {
-    display: none;
+    // display: none;
 }
 
 .about__item--active {
-
-    // display: flex !important;
-    // background-color: red !important;
-    // &:first-child {
-    //     display: block !important;
-    // }
-    // &:nth-child(3) {
-        display: block !important;
-    // }
-
-    // &:not(:last-child) {
-    //     display: block !important;
-    // }
-    // вырезает каждый 3 элемнт а точнее пременяется к каждосу третиму
+    display: flex !important;
 }
+// .about__item {
+//     display: flex !important;
+//     // height: 100%;
+// }
 
 .wenstay {
     display: revert;
-
 }
+
+.about__item--is-active {
+    transform: rotateX(0);
+    opacity: 1;
+    display: block;
+    position: relative;
+    top: 0;
+    height: 100%;
+}
+
+// .suitable-list__item--is-active {
+//     perspective: 0;
+// }
+
+// .suitable-list__item--is-active .suitable-list__text {
+//     transform: rotateX(0);
+//     opacity: 1;
+//     display: block;
+//     position: relative;
+//     top: 0;
+// }
+
+// .suitable-list__item--is-active .suitable-list__open-close:before,
+// .suitable-list__item--is-active .suitable-list__open-close:after {
+//     transform: rotate(315deg)
+// }
+
+// .suitable-list__item--is-active:last-child {
+//     margin-bottom: 0
+// }
+
+// .suitable-list__item--is-active {
+//     perspective: 0;
+// }
+
+// .suitable-list__item--is-active .suitable-list__text {
+//     transform: rotateX(0);
+//     opacity: 1;
+//     display: block;
+//     position: relative;
+//     top: 0;
+// }
+
+// .suitable-list__item--is-active .suitable-list__open-close:before,
+// .suitable-list__item--is-active .suitable-list__open-close:after {
+//     transform: rotate(315deg)
+// }
+
+// .suitable-list__item--is-active:last-child {
+//     margin-bottom: 0
+// }
 
 // .one {
 //     &:first-child {
